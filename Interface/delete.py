@@ -2,10 +2,10 @@ import requests
 
 token = "9591bca2739d476ea4ef77ce3df5908d"
 
-id = "7547db7284954afd980dae5a091d3487"
+id = "c82ec484a0644ae4adcf1a9deaeefdc1"
 
 # 接口地址，添加 id 作为查询参数
-url = f"http://123.60.179.95:48090/admin-api/cms/policy/delete?id={id}"  # 使用之前创建的 id
+url = f"http://123.60.179.95:48090/admin-api/cms/policy/delete?id={id}"  # 创建的 id
 
 
 # 请求头
