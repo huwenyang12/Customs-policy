@@ -176,8 +176,9 @@ async def run_hgfg_spider():
         df_new = pd.DataFrame(list(zip(FBBT_list, FWJG_list, FBSJ_list, SXRQ_list, FBWH_list, HREF_list)),
                               columns=["政策标题", "发文机关", "发布时间", "生效日期", "发布文号","附件列表"])
         df_all = pd.concat([df_existing, df_new], ignore_index=True) if not df_existing.empty else df_new
-
+        # 输出excel表格
         df_all.to_excel(excel_path, index=False)
+        # 保存为json数据
         df_all.to_json(json_path, orient="records", force_ascii=False, indent=4)
         log_info(f"\n共保存 {len(df_all)} 条记录,新增 {sum} 条记录")
     else:

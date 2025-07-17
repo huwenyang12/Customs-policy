@@ -29,9 +29,9 @@ os.makedirs(DOWNLOAD_YJJ_DIR, exist_ok=True) #药监局
 
 
 # 全局参数,设置最大爬取页数
-MAX_PAGES_HGFG = 1 # 海关法规
-MAX_PAGES_ZCJD = 2 # 海关法规_政策解读
+MAX_PAGES_HGFG = 2 # 海关法规
+MAX_PAGES_ZCJD = 1 # 海关法规_政策解读
 MAX_PAGES_CZB = 1 # 财政部
 MAX_PAGES_SWW =1 # 商务委最大爬取页数【固定值=1】
 MAX_PAGES_GXB =1 # 工信部最大爬取页数【固定值=1】
-MAX_PAGES_YJJ =2 # 药监局
+MAX_PAGES_YJJ =1 # 药监局

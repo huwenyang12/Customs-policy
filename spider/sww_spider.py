@@ -35,7 +35,7 @@ async def run_sww_spider():
 
     try:
         async with async_playwright() as p:
-            browser = await p.firefox.launch(headless=True)
+            browser = await p.firefox.launch(headless=False)
             context = await browser.new_context(accept_downloads=True, locale="zh-CN")
             page = await context.new_page()
             await page.goto("http://www.mofcom.gov.cn/zcfb/index.html", wait_until="networkidle")
