@@ -1,41 +1,110 @@
+import json
 from customs_policy_client import CustomsPolicyClient
 
-client = CustomsPolicyClient(token="9591bca2739d476ea4ef77ce3df5908d")
+# 初始化客户端
+obj = CustomsPolicyClient(token="9591bca2739d476ea4ef77ce3df5908d")
 
-# 上传文件
-file_name = "压缩1.zip"
-zip_path = rf"D:\海关接口\海关_附件1\Interface\zip_package\{file_name}"
-download_url = client.upload_file(zip_path)
+# 读取海关法规数据
+json_file_path = r"D:\海关接口\海关_附件1\output\data\海关法规.json"
 
-if download_url:
-    policy_data = {
-        "id": "108516",
-        "articleTitle": "关于进口散装食用植物油贮存运输有关要求的公告",
-        "documentIssuingAgency": "海关总署",
-        "articleUrl": "http://www.customs.gov.cn/customs/302249/302266/302267/6627988/index.html",
-        "releaseDate": "2025-07-17T10:58:02.708Z",
-        "effectiveDate": "2025-07-17T10:58:02.708Z",
-        "issueNum": "147",
-        "efficacy": "有效",
-        "attachment": "1",
-        "attachmentUrl": download_url,
-        "policyId": "1001",
-        # "createTime":"2025-07-17T10:58:02.708Z"
-    }
+try:
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        customs_data = json.load(f)
+    print(f"成功读取JSON文件，共 {len(customs_data)} 条政策数据")
+except FileNotFoundError:
+    print(f"错误：找不到文件 {json_file_path}")
+    exit(1)
+except json.JSONDecodeError as e:
+    print(f"错误：JSON文件格式错误 - {str(e)}")
+    exit(1)
+except Exception as e:
+    print(f"错误：读取文件时发生未知错误 - {str(e)}")
+    exit(1)
 
-    # 创建政策，获取返回的 ID（删除用）
-    created_id = client.create_policy(policy_data)
+def process_customs_policies(data_list):
+    """
+    处理海关政策数据，逐一推送到接口
+    """
+    success_count = 0
+    failed_count = 0
+    
+    for i, policy in enumerate(data_list):
+        print(f"\n=== 处理第 {i+1}/{len(data_list)} 条政策 ===")
+        print(f"政策标题: {policy['政策标题']}")
+        
+        # 获取唯一标识ID
+        policy_id = policy["唯一ID"]
+        
+        # 检查政策是否已存在
+        if obj.checkout_policy_exists(policy_id):
+            print(f"该政策已存在，policyId: {policy_id}，跳过创建")
+            continue
+        
+        try:
+            # 获取发文时间和生效日期，转为毫秒字符串
+            releaseDate_str = policy["发布时间"]
+            effectiveDate_str = policy["生效日期"]
+            release_ts = obj.timestamp_ms_str(releaseDate_str)
+            effective_ts = obj.timestamp_ms_str(effectiveDate_str)
+            
+            # 获取压缩包路径并上传文件
+            zip_path = policy["zip包路径"]
+            print(f"正在上传文件: {zip_path}")
+            attachment_url = obj.upload_file(zip_path)
+            
+            if not attachment_url:
+                print("文件上传失败，跳过该政策")
+                failed_count += 1
+                continue
+            
+            # 提取各字段数据
+            title = policy["政策标题"]
+            issuing_agency = policy["发文机关"]
+            url = policy["详情页链接"]
+            document_number = policy["发布文号"]
+            validity_status = policy["是否有效"]
+            attachment_count = str(policy["zip包文件数量"])
+            
+            # 构建政策数据
+            policy_data = {
+                "articleTitle": title,
+                "documentIssuingAgency": issuing_agency,
+                "articleUrl": url,
+                "releaseDate": release_ts,              # 发布时间，时间戳（毫秒）
+                "effectiveDate": effective_ts,          # 生效时间，时间戳（毫秒）
+                "issueNum": document_number,            # 文号
+                "efficacy": validity_status,            # 有效/已废止
+                "attachment": attachment_count,         # 附件数量
+                "attachmentUrl": attachment_url,        # 压缩包下载链接
+                "policyId": policy_id                   # 唯一 ID
+            }
+            
+            print(f"文件上传成功，开始创建政策...")
+            
+            # 创建政策，获取返回的 ID
+            created_id = obj.create_policy(policy_data)
+            
+            if created_id:
+                print(f"创建成功，ID: {created_id}")
+                success_count += 1
+            else:
+                print("创建失败，尝试回滚删除该政策...")
+                deleted = obj.delete_policy(created_id)
+                if deleted:
+                    print("创建失败已自动删除")
+                else:
+                    print("创建失败但删除失败，请手动处理")
+                failed_count += 1
+                
+        except Exception as e:
+            print(f"处理政策时发生错误: {str(e)}")
+            failed_count += 1
+    
+    print(f"\n=== 处理完成 ===")
+    print(f"成功: {success_count} 条")
+    print(f"失败: {failed_count} 条")
+    print(f"总计: {len(data_list)} 条")
 
-    if created_id:
-        print(f"创建成功，ID: {created_id}")
-    else:
-        print("创建失败，尝试删除刚创建的政策")
-
-        # 回滚失败删除（如果失败发生在逻辑后半段你也可以传一个你预设的 policyId）
-        deleted = client.delete_policy(created_id)
-        if deleted:
-            print("创建失败后已自动删除该政策")
-        else:
-            print("创建失败但删除失败，请手动处理")
-else:
-    print("上传失败，取消创建")
+# 执行处理
+if __name__ == "__main__":
+    process_customs_policies(customs_data)
