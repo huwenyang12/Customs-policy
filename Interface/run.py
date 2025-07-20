@@ -1,25 +1,23 @@
 import json
+import logging
 from customs_policy_client import CustomsPolicyClient
 
 # 初始化客户端
 obj = CustomsPolicyClient(token="9591bca2739d476ea4ef77ce3df5908d")
 
 # 读取海关法规数据
-json_file_path = r"D:\海关接口\海关_附件1\output\data\海关法规.json"
+file_name = "财政部.json"
+# file_name = "海关法规.json"
+json_file_path = rf"D:\海关接口\海关_附件1\output\data\{file_name}"
 
-try:
-    with open(json_file_path, 'r', encoding='utf-8') as f:
-        customs_data = json.load(f)
-    print(f"成功读取JSON文件，共 {len(customs_data)} 条政策数据")
-except FileNotFoundError:
-    print(f"错误：找不到文件 {json_file_path}")
-    exit(1)
-except json.JSONDecodeError as e:
-    print(f"错误：JSON文件格式错误 - {str(e)}")
-    exit(1)
-except Exception as e:
-    print(f"错误：读取文件时发生未知错误 - {str(e)}")
-    exit(1)
+def read_file(path=json_file_path):
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            customs_data = json.load(f)
+        print(f"成功读取JSON文件，共 {len(customs_data)} 条政策数据")
+        return customs_data
+    except Exception as e:
+        print(f"错误：读取文件时发生未知错误 - {str(e)}")
 
 def process_customs_policies(data_list):
     """
@@ -27,6 +25,8 @@ def process_customs_policies(data_list):
     """
     success_count = 0
     failed_count = 0
+    ckip_count = 0
+    created_ids = []  # 用于存储成功创建的政策ID
     
     for i, policy in enumerate(data_list):
         print(f"\n=== 处理第 {i+1}/{len(data_list)} 条政策 ===")
@@ -38,6 +38,7 @@ def process_customs_policies(data_list):
         # 检查政策是否已存在
         if obj.checkout_policy_exists(policy_id):
             print(f"该政策已存在，policyId: {policy_id}，跳过创建")
+            ckip_count += 1
             continue
         
         try:
@@ -86,6 +87,7 @@ def process_customs_policies(data_list):
             
             if created_id:
                 print(f"创建成功，ID: {created_id}")
+                created_ids.append(created_id)  # 将成功的ID添加到列表
                 success_count += 1
             else:
                 print("创建失败，尝试回滚删除该政策...")
@@ -103,8 +105,16 @@ def process_customs_policies(data_list):
     print(f"\n=== 处理完成 ===")
     print(f"成功: {success_count} 条")
     print(f"失败: {failed_count} 条")
+    print(f"跳过: {ckip_count} 条")
     print(f"总计: {len(data_list)} 条")
+    
+    # 打印成功创建的所有 policy_id
+    if success_count > 0:
+        # 记录成功创建的政策 ID 到日志文件
+        logging.info(f"成功创建的政策ID列表：")
+        logging.info(f"{created_ids}\n")
 
 # 执行处理
 if __name__ == "__main__":
+    customs_data = read_file()
     process_customs_policies(customs_data)

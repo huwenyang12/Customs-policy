@@ -13,8 +13,13 @@ async def czb_fbwh(page):
         if el:
             text = await el.inner_text()
             if text.strip():
-                return text.strip()
+                # 提取“第X号”或“X号”中的数字
+                match = re.search(r'(?:第)?(\d+)号', text.strip())  # 使用(?:第)?表示第字是可选的
+                if match:
+                    return match.group(1)  # 返回提取的数字
     return ""
+
+
 # 商务委=================================================================================
 # 商务委_发布时间
 async def sww_fbsj(page):

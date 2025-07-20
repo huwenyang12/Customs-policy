@@ -1,80 +1,246 @@
-[2025-07-18 16:48:27] INFO: 上传状态码: 200
-[2025-07-18 16:48:27] INFO: 上传响应: {"code":0,"data":{"id":1910,"configId":30,"path":"hgzc/2025/07/18/压缩1.zip","name":"压缩1.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/压缩1.zip","type":"application/zip","size":37131,"formattedSize":"36 KB","creator":"163","createTime":1752828507418},"msg":""}
-[2025-07-18 16:48:27] INFO: 创建状态码: 200
-[2025-07-18 16:48:27] INFO: 创建响应: {"code":0,"data":"5260c15f8a554e7c888bf40148872ddb","msg":""}
+[2025-07-20 18:15:10] INFO: 上传状态码: 200
+[2025-07-20 18:15:10] INFO: 上传响应: {"code":0,"data":{"id":1983,"configId":30,"path":"HGZC/2025/07/20/2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":531735,"formattedSize":"519 KB","creator":"163","createTime":1753006510848},"msg":""}
+[2025-07-20 18:15:11] INFO: 创建状态码: 200
+[2025-07-20 18:15:11] INFO: 创建响应: {"code":0,"data":"5b3cc1718dc14d03b795e28c6fcb0df1","msg":""}
 
-[2025-07-18 18:27:36] INFO: 上传状态码: 200
-[2025-07-18 18:27:36] INFO: 上传响应: {"code":0,"data":{"id":1911,"configId":30,"path":"hgzc/2025/07/18/2025-07-16_关于进口冈比亚花生植物检疫要求的公告.zip","name":"2025-07-16_关于进口冈比亚花生植物检疫要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-07-16_关于进口冈比亚花生植物检疫要求的公告.zip","type":"application/zip","size":1201196,"formattedSize":"1 MB","creator":"163","createTime":1752834456249},"msg":""}
-[2025-07-18 18:27:36] INFO: 创建状态码: 200
-[2025-07-18 18:27:36] INFO: 创建响应: {"code":0,"data":"cf4e900aaed647d99c0fdb4297a9f900","msg":""}
+[2025-07-20 18:15:11] INFO: 上传状态码: 200
+[2025-07-20 18:15:11] INFO: 上传响应: {"code":0,"data":{"id":1984,"configId":30,"path":"HGZC/2025/07/20/2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":537230,"formattedSize":"524 KB","creator":"163","createTime":1753006511451},"msg":""}
+[2025-07-20 18:15:11] INFO: 创建状态码: 200
+[2025-07-20 18:15:11] INFO: 创建响应: {"code":0,"data":"6330f0f9a9a94befa736c6f1787a14c7","msg":""}
 
-[2025-07-18 18:27:38] INFO: 上传状态码: 200
-[2025-07-18 18:27:38] INFO: 上传响应: {"code":0,"data":{"id":1912,"configId":30,"path":"hgzc/2025/07/18/2025-07-16_关于发布《2025年第八届中国国际进口博览会海关通关须知》和《海关支持2025年第八届中国国际进口博览会便利措施》的公告.zip","name":"2025-07-16_关于发布《2025年第八届中国国际进口博览会海关通关须知》和《海关支持2025年第八届中国国际进口博览会便利措施》的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-07-16_关于发布《2025年第八届中国国际进口博览会海关通关须知》和《海关支持2025年第八届中国国际进口博览会便利措施》的公告.zip","type":"application/zip","size":614232,"formattedSize":"599 KB","creator":"163","createTime":1752834458407},"msg":""}
-[2025-07-18 18:27:38] INFO: 创建状态码: 200
-[2025-07-18 18:27:38] INFO: 创建响应: {"code":0,"data":"8b2fe7c39d484187bd5f5b8aa6e5ea9c","msg":""}
+[2025-07-20 18:15:11] INFO: 上传状态码: 200
+[2025-07-20 18:15:11] INFO: 上传响应: {"code":0,"data":{"id":1985,"configId":30,"path":"HGZC/2025/07/20/2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":528172,"formattedSize":"515 KB","creator":"163","createTime":1753006511663},"msg":""}
+[2025-07-20 18:15:11] INFO: 创建状态码: 200
+[2025-07-20 18:15:11] INFO: 创建响应: {"code":0,"data":"111c7e782d4341a9b8efe04ece585ae5","msg":""}
 
-[2025-07-18 18:27:41] INFO: 上传状态码: 200
-[2025-07-18 18:27:41] INFO: 上传响应: {"code":0,"data":{"id":1913,"configId":30,"path":"hgzc/2025/07/18/2025-07-15_关于进口散装食用植物油贮存运输有关要求的公告.zip","name":"2025-07-15_关于进口散装食用植物油贮存运输有关要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-07-15_关于进口散装食用植物油贮存运输有关要求的公告.zip","type":"application/zip","size":728384,"formattedSize":"711 KB","creator":"163","createTime":1752834461664},"msg":""}
-[2025-07-18 18:27:41] INFO: 创建状态码: 200
-[2025-07-18 18:27:41] INFO: 创建响应: {"code":0,"data":"e33b2614ee3e46baa603b2a11f552d65","msg":""}
+[2025-07-20 18:15:11] INFO: 上传状态码: 200
+[2025-07-20 18:15:11] INFO: 上传响应: {"code":0,"data":{"id":1986,"configId":30,"path":"HGZC/2025/07/20/2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","name":"2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","type":"application/zip","size":525123,"formattedSize":"512 KB","creator":"163","createTime":1753006511870},"msg":""}
+[2025-07-20 18:15:11] INFO: 创建状态码: 200
+[2025-07-20 18:15:11] INFO: 创建响应: {"code":0,"data":"7edd62caf53e4674b12f1e666f116c78","msg":""}
 
-[2025-07-18 18:27:43] INFO: 上传状态码: 200
-[2025-07-18 18:27:43] INFO: 上传响应: {"code":0,"data":{"id":1914,"configId":30,"path":"hgzc/2025/07/18/2025-07-08_关于开展报关单证及电子数据自助查询打印试点的公告.zip","name":"2025-07-08_关于开展报关单证及电子数据自助查询打印试点的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-07-08_关于开展报关单证及电子数据自助查询打印试点的公告.zip","type":"application/zip","size":605789,"formattedSize":"591 KB","creator":"163","createTime":1752834463881},"msg":""}
-[2025-07-18 18:27:43] INFO: 创建状态码: 200
-[2025-07-18 18:27:43] INFO: 创建响应: {"code":0,"data":"642a3b7e4f564ed19679604e435d7bb9","msg":""}
+[2025-07-20 18:15:12] INFO: 上传状态码: 200
+[2025-07-20 18:15:12] INFO: 上传响应: {"code":0,"data":{"id":1987,"configId":30,"path":"HGZC/2025/07/20/2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","name":"2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","type":"application/zip","size":681367,"formattedSize":"665 KB","creator":"163","createTime":1753006512162},"msg":""}
+[2025-07-20 18:15:12] INFO: 创建状态码: 200
+[2025-07-20 18:15:12] INFO: 创建响应: {"code":0,"data":"a129b1c72842472c9d41690d4b3014c2","msg":""}
 
-[2025-07-18 18:27:48] INFO: 上传状态码: 200
-[2025-07-18 18:27:48] INFO: 上传响应: {"code":0,"data":{"id":1915,"configId":30,"path":"hgzc/2025/07/18/2025-07-03_关于进口埃塞俄比亚豆粕检验检疫要求的公告.zip","name":"2025-07-03_关于进口埃塞俄比亚豆粕检验检疫要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-07-03_关于进口埃塞俄比亚豆粕检验检疫要求的公告.zip","type":"application/zip","size":1105480,"formattedSize":"1 MB","creator":"163","createTime":1752834468753},"msg":""}
-[2025-07-18 18:27:48] INFO: 创建状态码: 200
-[2025-07-18 18:27:48] INFO: 创建响应: {"code":0,"data":"294d7adf4d264b71a0244ddbc5c391ae","msg":""}
+[2025-07-20 18:15:12] INFO: 上传状态码: 200
+[2025-07-20 18:15:12] INFO: 上传响应: {"code":0,"data":{"id":1988,"configId":30,"path":"HGZC/2025/07/20/2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","name":"2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","type":"application/zip","size":784450,"formattedSize":"766 KB","creator":"163","createTime":1753006512420},"msg":""}
+[2025-07-20 18:15:12] INFO: 创建状态码: 200
+[2025-07-20 18:15:12] INFO: 创建响应: {"code":0,"data":"01cdd4c70773431ca84eeaf888b0c2cb","msg":""}
 
-[2025-07-18 18:27:51] INFO: 上传状态码: 200
-[2025-07-18 18:27:51] INFO: 上传响应: {"code":0,"data":{"id":1916,"configId":30,"path":"hgzc/2025/07/18/2025-07-02_关于防止罗马尼亚绵羊痘和山羊痘传入我国的公告.zip","name":"2025-07-02_关于防止罗马尼亚绵羊痘和山羊痘传入我国的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-07-02_关于防止罗马尼亚绵羊痘和山羊痘传入我国的公告.zip","type":"application/zip","size":592140,"formattedSize":"578 KB","creator":"163","createTime":1752834471041},"msg":""}
-[2025-07-18 18:27:51] INFO: 创建状态码: 200
-[2025-07-18 18:27:51] INFO: 创建响应: {"code":0,"data":"da2c8d17c69b4d51947aef3937446983","msg":""}
+[2025-07-20 18:15:12] INFO: 上传状态码: 200
+[2025-07-20 18:15:12] INFO: 上传响应: {"code":0,"data":{"id":1989,"configId":30,"path":"HGZC/2025/07/20/2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","name":"2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","type":"application/zip","size":404021,"formattedSize":"394 KB","creator":"163","createTime":1753006512639},"msg":""}
+[2025-07-20 18:15:12] INFO: 创建状态码: 200
+[2025-07-20 18:15:12] INFO: 创建响应: {"code":0,"data":"ee2b9b9cf2714d5bb55f90c1cbf17aff","msg":""}
 
-[2025-07-18 18:27:52] INFO: 上传状态码: 200
-[2025-07-18 18:27:52] INFO: 上传响应: {"code":0,"data":{"id":1917,"configId":30,"path":"hgzc/2025/07/18/2025-07-01_关于扩大公路跨境快速通关改革适用范围至福州海关辖区的公告.zip","name":"2025-07-01_关于扩大公路跨境快速通关改革适用范围至福州海关辖区的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-07-01_关于扩大公路跨境快速通关改革适用范围至福州海关辖区的公告.zip","type":"application/zip","size":439383,"formattedSize":"429 KB","creator":"163","createTime":1752834472788},"msg":""}
-[2025-07-18 18:27:52] INFO: 创建状态码: 200
-[2025-07-18 18:27:52] INFO: 创建响应: {"code":0,"data":"5ebd0232ad444b82bff2535c9012ed2c","msg":""}
+[2025-07-20 18:15:13] INFO: 上传状态码: 200
+[2025-07-20 18:15:13] INFO: 上传响应: {"code":0,"data":{"id":1990,"configId":30,"path":"HGZC/2025/07/20/2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","name":"2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","type":"application/zip","size":844292,"formattedSize":"824 KB","creator":"163","createTime":1753006513132},"msg":""}
+[2025-07-20 18:15:13] INFO: 创建状态码: 200
+[2025-07-20 18:15:13] INFO: 创建响应: {"code":0,"data":"e709de091a2a4d5090b1de04ec3df2ae","msg":""}
 
-[2025-07-18 18:27:54] INFO: 上传状态码: 200
-[2025-07-18 18:27:54] INFO: 上传响应: {"code":0,"data":{"id":1918,"configId":30,"path":"hgzc/2025/07/18/2025-07-01_关于废止和宣布失效部分规范性文件（三）的公告.zip","name":"2025-07-01_关于废止和宣布失效部分规范性文件（三）的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-07-01_关于废止和宣布失效部分规范性文件（三）的公告.zip","type":"application/zip","size":505785,"formattedSize":"493 KB","creator":"163","createTime":1752834474872},"msg":""}
-[2025-07-18 18:27:54] INFO: 创建状态码: 200
-[2025-07-18 18:27:54] INFO: 创建响应: {"code":0,"data":"72cb239af5d542869e95acd3f248f4e9","msg":""}
+[2025-07-20 18:15:13] INFO: 上传状态码: 200
+[2025-07-20 18:15:13] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-20 18:15:13] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关_附件1\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-20 18:15:14] INFO: 上传状态码: 200
+[2025-07-20 18:15:14] INFO: 上传响应: {"code":0,"data":{"id":1991,"configId":30,"path":"HGZC/2025/07/20/2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","name":"2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","type":"application/zip","size":3107815,"formattedSize":"2 MB","creator":"163","createTime":1753006514029},"msg":""}
+[2025-07-20 18:15:14] INFO: 创建状态码: 200
+[2025-07-20 18:15:14] INFO: 创建响应: {"code":0,"data":"e05f79a264aa4d2b9227d191bfb2d0a1","msg":""}
 
-[2025-07-18 18:27:57] INFO: 上传状态码: 200
-[2025-07-18 18:27:57] INFO: 上传响应: {"code":0,"data":{"id":1919,"configId":30,"path":"hgzc/2025/07/18/2025-06-30_关于公布海关稽查、涉企贸易调查、核查相关法律文书的公告.zip","name":"2025-06-30_关于公布海关稽查、涉企贸易调查、核查相关法律文书的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-06-30_关于公布海关稽查、涉企贸易调查、核查相关法律文书的公告.zip","type":"application/zip","size":526717,"formattedSize":"514 KB","creator":"163","createTime":1752834477388},"msg":""}
-[2025-07-18 18:27:57] INFO: 创建状态码: 200
-[2025-07-18 18:27:57] INFO: 创建响应: {"code":0,"data":"0d081a76fcb144399c472944c589a420","msg":""}
+[2025-07-20 18:15:14] INFO: 成功创建的政策ID列表：
+[2025-07-20 18:15:14] INFO: ['5b3cc1718dc14d03b795e28c6fcb0df1', '6330f0f9a9a94befa736c6f1787a14c7', '111c7e782d4341a9b8efe04ece585ae5', '7edd62caf53e4674b12f1e666f116c78', 'a129b1c72842472c9d41690d4b3014c2', '01cdd4c70773431ca84eeaf888b0c2cb', 'ee2b9b9cf2714d5bb55f90c1cbf17aff', 'e709de091a2a4d5090b1de04ec3df2ae', 'e05f79a264aa4d2b9227d191bfb2d0a1']
 
-[2025-07-18 18:27:59] INFO: 上传状态码: 200
-[2025-07-18 18:27:59] INFO: 上传响应: {"code":0,"data":{"id":1920,"configId":30,"path":"hgzc/2025/07/18/2025-06-29_关于有条件恢复日本部分地区水产品进口的公告.zip","name":"2025-06-29_关于有条件恢复日本部分地区水产品进口的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-06-29_关于有条件恢复日本部分地区水产品进口的公告.zip","type":"application/zip","size":589973,"formattedSize":"576 KB","creator":"163","createTime":1752834479563},"msg":""}
-[2025-07-18 18:27:59] INFO: 创建状态码: 200
-[2025-07-18 18:27:59] INFO: 创建响应: {"code":0,"data":"5b3228e8b5e3458cbd9eeed5202e6fb1","msg":""}
+[2025-07-20 18:15:39] INFO: 上传状态码: 200
+[2025-07-20 18:15:39] INFO: 上传响应: {"code":0,"data":{"id":1992,"configId":30,"path":"HGZC/2025/07/20/2025-07-16_关于进口冈比亚花生植物检疫要求的公告.zip","name":"2025-07-16_关于进口冈比亚花生植物检疫要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-07-16_关于进口冈比亚花生植物检疫要求的公告.zip","type":"application/zip","size":1201021,"formattedSize":"1 MB","creator":"163","createTime":1753006539665},"msg":""}
+[2025-07-20 18:15:39] INFO: 创建状态码: 200
+[2025-07-20 18:15:39] INFO: 创建响应: {"code":0,"data":"86f92fb157f94625b99afbe3ed6af447","msg":""}
 
-[2025-07-18 18:28:01] INFO: 上传状态码: 200
-[2025-07-18 18:28:01] INFO: 上传响应: {"code":0,"data":{"id":1921,"configId":30,"path":"hgzc/2025/07/18/2025-06-27_关于调整加工贸易限制类商品保证金利率的公告.zip","name":"2025-06-27_关于调整加工贸易限制类商品保证金利率的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-06-27_关于调整加工贸易限制类商品保证金利率的公告.zip","type":"application/zip","size":434235,"formattedSize":"424 KB","creator":"163","createTime":1752834481740},"msg":""}
-[2025-07-18 18:28:01] INFO: 创建状态码: 200
-[2025-07-18 18:28:01] INFO: 创建响应: {"code":0,"data":"e69dbf39df9d4149b5db506f2daa5e62","msg":""}
+[2025-07-20 18:15:40] INFO: 上传状态码: 200
+[2025-07-20 18:15:40] INFO: 上传响应: {"code":0,"data":{"id":1993,"configId":30,"path":"HGZC/2025/07/20/2025-07-16_关于发布《2025年第八届中国国际进口博览会海关通关须知》和《海关支持2025年第八届中国国际进口博览会便利措施》的公告.zip","name":"2025-07-16_关于发布《2025年第八届中国国际进口博览会海关通关须知》和《海关支持2025年第八届中国国际进口博览会便利措施》的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-07-16_关于发布《2025年第八届中国国际进口博览会海关通关须知》和《海关支持2025年第八届中国国际进口博览会便利措施》的公告.zip","type":"application/zip","size":614209,"formattedSize":"599 KB","creator":"163","createTime":1753006539963},"msg":""}
+[2025-07-20 18:15:40] INFO: 创建状态码: 200
+[2025-07-20 18:15:40] INFO: 创建响应: {"code":0,"data":"5c7227af40b147d88dbfb8ee3ba9bb94","msg":""}
 
-[2025-07-18 18:28:04] INFO: 上传状态码: 200
-[2025-07-18 18:28:04] INFO: 上传响应: {"code":0,"data":{"id":1922,"configId":30,"path":"hgzc/2025/07/18/2025-06-26_关于优化出口货物申报前检验检疫申请的公告.zip","name":"2025-06-26_关于优化出口货物申报前检验检疫申请的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-06-26_关于优化出口货物申报前检验检疫申请的公告.zip","type":"application/zip","size":692271,"formattedSize":"676 KB","creator":"163","createTime":1752834484317},"msg":""}
-[2025-07-18 18:28:04] INFO: 创建状态码: 200
-[2025-07-18 18:28:04] INFO: 创建响应: {"code":0,"data":"2ed50765e4f94767bcccf818af3a84d7","msg":""}
+[2025-07-20 18:15:40] INFO: 上传状态码: 200
+[2025-07-20 18:15:40] INFO: 上传响应: {"code":0,"data":{"id":1994,"configId":30,"path":"HGZC/2025/07/20/2025-07-15_关于进口散装食用植物油贮存运输有关要求的公告.zip","name":"2025-07-15_关于进口散装食用植物油贮存运输有关要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-07-15_关于进口散装食用植物油贮存运输有关要求的公告.zip","type":"application/zip","size":727876,"formattedSize":"710 KB","creator":"163","createTime":1753006540137},"msg":""}
+[2025-07-20 18:15:40] INFO: 创建状态码: 200
+[2025-07-20 18:15:40] INFO: 创建响应: {"code":0,"data":"71392df9a06e4aa6969453408929b9ac","msg":""}
 
-[2025-07-18 18:28:07] INFO: 上传状态码: 200
-[2025-07-18 18:28:07] INFO: 上传响应: {"code":0,"data":{"id":1923,"configId":30,"path":"hgzc/2025/07/18/2025-06-26_关于香港输内地乳品检验检疫和卫生要求的公告.zip","name":"2025-06-26_关于香港输内地乳品检验检疫和卫生要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-06-26_关于香港输内地乳品检验检疫和卫生要求的公告.zip","type":"application/zip","size":862546,"formattedSize":"842 KB","creator":"163","createTime":1752834487844},"msg":""}
-[2025-07-18 18:28:07] INFO: 创建状态码: 200
-[2025-07-18 18:28:07] INFO: 创建响应: {"code":0,"data":"0e705205fc72443bb2aa83ef5e0d3765","msg":""}
+[2025-07-20 18:15:40] INFO: 上传状态码: 200
+[2025-07-20 18:15:40] INFO: 上传响应: {"code":0,"data":{"id":1995,"configId":30,"path":"HGZC/2025/07/20/2025-07-08_关于开展报关单证及电子数据自助查询打印试点的公告.zip","name":"2025-07-08_关于开展报关单证及电子数据自助查询打印试点的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-07-08_关于开展报关单证及电子数据自助查询打印试点的公告.zip","type":"application/zip","size":605491,"formattedSize":"591 KB","creator":"163","createTime":1753006540388},"msg":""}
+[2025-07-20 18:15:40] INFO: 创建状态码: 200
+[2025-07-20 18:15:40] INFO: 创建响应: {"code":0,"data":"89431272797b4b3ab61de96eb0007c17","msg":""}
 
-[2025-07-18 18:28:11] INFO: 上传状态码: 200
-[2025-07-18 18:28:11] INFO: 上传响应: {"code":0,"data":{"id":1924,"configId":30,"path":"hgzc/2025/07/18/2025-06-26_关于进口马拉维夏威夷果检验检疫和卫生要求的公告.zip","name":"2025-06-26_关于进口马拉维夏威夷果检验检疫和卫生要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-06-26_关于进口马拉维夏威夷果检验检疫和卫生要求的公告.zip","type":"application/zip","size":939198,"formattedSize":"917 KB","creator":"163","createTime":1752834491724},"msg":""}
-[2025-07-18 18:28:11] INFO: 创建状态码: 200
-[2025-07-18 18:28:11] INFO: 创建响应: {"code":0,"data":"72b9381be4524e1280a34972704b2759","msg":""}
+[2025-07-20 18:15:40] INFO: 上传状态码: 200
+[2025-07-20 18:15:40] INFO: 上传响应: {"code":0,"data":{"id":1996,"configId":30,"path":"HGZC/2025/07/20/2025-07-03_关于进口埃塞俄比亚豆粕检验检疫要求的公告.zip","name":"2025-07-03_关于进口埃塞俄比亚豆粕检验检疫要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-07-03_关于进口埃塞俄比亚豆粕检验检疫要求的公告.zip","type":"application/zip","size":1105513,"formattedSize":"1 MB","creator":"163","createTime":1753006540722},"msg":""}
+[2025-07-20 18:15:40] INFO: 创建状态码: 200
+[2025-07-20 18:15:40] INFO: 创建响应: {"code":0,"data":"dfc13e33e91648339cbe4d08bd117ddf","msg":""}
 
-[2025-07-18 18:28:16] INFO: 上传状态码: 200
-[2025-07-18 18:28:16] INFO: 上传响应: {"code":0,"data":{"id":1925,"configId":30,"path":"hgzc/2025/07/18/2025-06-25_关于进口冈比亚腰果检验检疫和卫生要求的公告.zip","name":"2025-06-25_关于进口冈比亚腰果检验检疫和卫生要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/hgzc/2025/07/18/2025-06-25_关于进口冈比亚腰果检验检疫和卫生要求的公告.zip","type":"application/zip","size":977425,"formattedSize":"954 KB","creator":"163","createTime":1752834496117},"msg":""}
-[2025-07-18 18:28:16] INFO: 创建状态码: 200
-[2025-07-18 18:28:16] INFO: 创建响应: {"code":0,"data":"aad2cb47673c48709a7fba6ca752c69a","msg":""}
+[2025-07-20 18:15:40] INFO: 上传状态码: 200
+[2025-07-20 18:15:40] INFO: 上传响应: {"code":0,"data":{"id":1997,"configId":30,"path":"HGZC/2025/07/20/2025-07-02_关于防止罗马尼亚绵羊痘和山羊痘传入我国的公告.zip","name":"2025-07-02_关于防止罗马尼亚绵羊痘和山羊痘传入我国的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-07-02_关于防止罗马尼亚绵羊痘和山羊痘传入我国的公告.zip","type":"application/zip","size":592238,"formattedSize":"578 KB","creator":"163","createTime":1753006540885},"msg":""}
+[2025-07-20 18:15:41] INFO: 创建状态码: 200
+[2025-07-20 18:15:41] INFO: 创建响应: {"code":0,"data":"df0441aa8237467997ba7a2b2012a42f","msg":""}
+
+[2025-07-20 18:15:41] INFO: 上传状态码: 200
+[2025-07-20 18:15:41] INFO: 上传响应: {"code":0,"data":{"id":1998,"configId":30,"path":"HGZC/2025/07/20/2025-07-01_关于扩大公路跨境快速通关改革适用范围至福州海关辖区的公告.zip","name":"2025-07-01_关于扩大公路跨境快速通关改革适用范围至福州海关辖区的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-07-01_关于扩大公路跨境快速通关改革适用范围至福州海关辖区的公告.zip","type":"application/zip","size":439343,"formattedSize":"429 KB","creator":"163","createTime":1753006541039},"msg":""}
+[2025-07-20 18:15:41] INFO: 创建状态码: 200
+[2025-07-20 18:15:41] INFO: 创建响应: {"code":0,"data":"4d31a01377dd4a58826ad96a3560c034","msg":""}
+
+[2025-07-20 18:15:41] INFO: 上传状态码: 200
+[2025-07-20 18:15:41] INFO: 上传响应: {"code":0,"data":{"id":1999,"configId":30,"path":"HGZC/2025/07/20/2025-07-01_关于废止和宣布失效部分规范性文件（三）的公告.zip","name":"2025-07-01_关于废止和宣布失效部分规范性文件（三）的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-07-01_关于废止和宣布失效部分规范性文件（三）的公告.zip","type":"application/zip","size":505835,"formattedSize":"493 KB","creator":"163","createTime":1753006541193},"msg":""}
+[2025-07-20 18:15:41] INFO: 创建状态码: 200
+[2025-07-20 18:15:41] INFO: 创建响应: {"code":0,"data":"3c0351beffbf44f8b4520c0a3bb78c13","msg":""}
+
+[2025-07-20 18:15:41] INFO: 上传状态码: 200
+[2025-07-20 18:15:41] INFO: 上传响应: {"code":0,"data":{"id":2000,"configId":30,"path":"HGZC/2025/07/20/2025-06-30_关于公布海关稽查、涉企贸易调查、核查相关法律文书的公告.zip","name":"2025-06-30_关于公布海关稽查、涉企贸易调查、核查相关法律文书的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-06-30_关于公布海关稽查、涉企贸易调查、核查相关法律文书的公告.zip","type":"application/zip","size":526866,"formattedSize":"514 KB","creator":"163","createTime":1753006541359},"msg":""}
+[2025-07-20 18:15:41] INFO: 创建状态码: 200
+[2025-07-20 18:15:41] INFO: 创建响应: {"code":0,"data":"dc312d7210d744f99e72af4663747e67","msg":""}
+
+[2025-07-20 18:15:41] INFO: 上传状态码: 200
+[2025-07-20 18:15:41] INFO: 上传响应: {"code":0,"data":{"id":2001,"configId":30,"path":"HGZC/2025/07/20/2025-06-29_关于有条件恢复日本部分地区水产品进口的公告.zip","name":"2025-06-29_关于有条件恢复日本部分地区水产品进口的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-06-29_关于有条件恢复日本部分地区水产品进口的公告.zip","type":"application/zip","size":589966,"formattedSize":"576 KB","creator":"163","createTime":1753006541540},"msg":""}
+[2025-07-20 18:15:41] INFO: 创建状态码: 200
+[2025-07-20 18:15:41] INFO: 创建响应: {"code":0,"data":"0143874c62274b12aa61ebc571ff6d18","msg":""}
+
+[2025-07-20 18:15:42] INFO: 上传状态码: 200
+[2025-07-20 18:15:42] INFO: 上传响应: {"code":0,"data":{"id":2002,"configId":30,"path":"HGZC/2025/07/20/2025-06-27_关于调整加工贸易限制类商品保证金利率的公告.zip","name":"2025-06-27_关于调整加工贸易限制类商品保证金利率的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-06-27_关于调整加工贸易限制类商品保证金利率的公告.zip","type":"application/zip","size":434288,"formattedSize":"424 KB","creator":"163","createTime":1753006542781},"msg":""}
+[2025-07-20 18:15:42] INFO: 创建状态码: 200
+[2025-07-20 18:15:42] INFO: 创建响应: {"code":0,"data":"b8402a4aac1d4a10905e4546ea3f5b81","msg":""}
+
+[2025-07-20 18:15:43] INFO: 上传状态码: 200
+[2025-07-20 18:15:43] INFO: 上传响应: {"code":0,"data":{"id":2003,"configId":30,"path":"HGZC/2025/07/20/2025-06-26_关于优化出口货物申报前检验检疫申请的公告.zip","name":"2025-06-26_关于优化出口货物申报前检验检疫申请的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-06-26_关于优化出口货物申报前检验检疫申请的公告.zip","type":"application/zip","size":692202,"formattedSize":"675 KB","creator":"163","createTime":1753006543130},"msg":""}
+[2025-07-20 18:15:43] INFO: 创建状态码: 200
+[2025-07-20 18:15:43] INFO: 创建响应: {"code":0,"data":"a1ab4a0d5a944e95b301a546b7504061","msg":""}
+
+[2025-07-20 18:15:43] INFO: 上传状态码: 200
+[2025-07-20 18:15:43] INFO: 上传响应: {"code":0,"data":{"id":2004,"configId":30,"path":"HGZC/2025/07/20/2025-06-26_关于香港输内地乳品检验检疫和卫生要求的公告.zip","name":"2025-06-26_关于香港输内地乳品检验检疫和卫生要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-06-26_关于香港输内地乳品检验检疫和卫生要求的公告.zip","type":"application/zip","size":862461,"formattedSize":"842 KB","creator":"163","createTime":1753006543333},"msg":""}
+[2025-07-20 18:15:43] INFO: 创建状态码: 200
+[2025-07-20 18:15:43] INFO: 创建响应: {"code":0,"data":"ff75fe7256e24edfac5fa7d8429c4d9d","msg":""}
+
+[2025-07-20 18:15:43] INFO: 上传状态码: 200
+[2025-07-20 18:15:43] INFO: 上传响应: {"code":0,"data":{"id":2005,"configId":30,"path":"HGZC/2025/07/20/2025-06-26_关于进口马拉维夏威夷果检验检疫和卫生要求的公告.zip","name":"2025-06-26_关于进口马拉维夏威夷果检验检疫和卫生要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-06-26_关于进口马拉维夏威夷果检验检疫和卫生要求的公告.zip","type":"application/zip","size":939187,"formattedSize":"917 KB","creator":"163","createTime":1753006543647},"msg":""}
+[2025-07-20 18:15:43] INFO: 创建状态码: 200
+[2025-07-20 18:15:43] INFO: 创建响应: {"code":0,"data":"be6201f622cd4b7b9f53ada541bc2d1e","msg":""}
+
+[2025-07-20 18:15:44] INFO: 上传状态码: 200
+[2025-07-20 18:15:44] INFO: 上传响应: {"code":0,"data":{"id":2006,"configId":30,"path":"HGZC/2025/07/20/2025-06-25_关于进口冈比亚腰果检验检疫和卫生要求的公告.zip","name":"2025-06-25_关于进口冈比亚腰果检验检疫和卫生要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-06-25_关于进口冈比亚腰果检验检疫和卫生要求的公告.zip","type":"application/zip","size":977464,"formattedSize":"954 KB","creator":"163","createTime":1753006543983},"msg":""}
+[2025-07-20 18:15:44] INFO: 创建状态码: 200
+[2025-07-20 18:15:44] INFO: 创建响应: {"code":0,"data":"0b6af48095d44a859e8c389ed0612438","msg":""}
+
+[2025-07-20 18:15:44] INFO: 成功创建的政策ID列表：
+[2025-07-20 18:15:44] INFO: ['86f92fb157f94625b99afbe3ed6af447', '5c7227af40b147d88dbfb8ee3ba9bb94', '71392df9a06e4aa6969453408929b9ac', '89431272797b4b3ab61de96eb0007c17', 'dfc13e33e91648339cbe4d08bd117ddf', 'df0441aa8237467997ba7a2b2012a42f', '4d31a01377dd4a58826ad96a3560c034', '3c0351beffbf44f8b4520c0a3bb78c13', 'dc312d7210d744f99e72af4663747e67', '0143874c62274b12aa61ebc571ff6d18', 'b8402a4aac1d4a10905e4546ea3f5b81', 'a1ab4a0d5a944e95b301a546b7504061', 'ff75fe7256e24edfac5fa7d8429c4d9d', 'be6201f622cd4b7b9f53ada541bc2d1e', '0b6af48095d44a859e8c389ed0612438']
+
+[2025-07-20 18:22:32] INFO: 上传状态码: 200
+[2025-07-20 18:22:32] INFO: 上传响应: {"code":0,"data":{"id":2007,"configId":30,"path":"HGZC/2025/07/20/2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":531735,"formattedSize":"519 KB","creator":"163","createTime":1753006952757},"msg":""}
+[2025-07-20 18:22:32] INFO: 创建状态码: 200
+[2025-07-20 18:22:32] INFO: 创建响应: {"code":0,"data":"19cf300811f74919ab760af254d69348","msg":""}
+
+[2025-07-20 18:22:33] INFO: 上传状态码: 200
+[2025-07-20 18:22:33] INFO: 上传响应: {"code":0,"data":{"id":2008,"configId":30,"path":"HGZC/2025/07/20/2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":537230,"formattedSize":"524 KB","creator":"163","createTime":1753006953072},"msg":""}
+[2025-07-20 18:22:33] INFO: 创建状态码: 200
+[2025-07-20 18:22:33] INFO: 创建响应: {"code":0,"data":"b6576ecfd64c4e08b69c9f95ed5a3c8f","msg":""}
+
+[2025-07-20 18:22:33] INFO: 上传状态码: 200
+[2025-07-20 18:22:33] INFO: 上传响应: {"code":0,"data":{"id":2009,"configId":30,"path":"HGZC/2025/07/20/2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":528172,"formattedSize":"515 KB","creator":"163","createTime":1753006953398},"msg":""}
+[2025-07-20 18:22:33] INFO: 创建状态码: 200
+[2025-07-20 18:22:33] INFO: 创建响应: {"code":0,"data":"84ac7c19af6645cfb11ca3b5325cbc0e","msg":""}
+
+[2025-07-20 18:22:33] INFO: 上传状态码: 200
+[2025-07-20 18:22:33] INFO: 上传响应: {"code":0,"data":{"id":2010,"configId":30,"path":"HGZC/2025/07/20/2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","name":"2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","type":"application/zip","size":525122,"formattedSize":"512 KB","creator":"163","createTime":1753006953642},"msg":""}
+[2025-07-20 18:22:33] INFO: 创建状态码: 200
+[2025-07-20 18:22:33] INFO: 创建响应: {"code":0,"data":"cc91604a057843adb5e6b75bcefe8be0","msg":""}
+
+[2025-07-20 18:22:34] INFO: 上传状态码: 200
+[2025-07-20 18:22:34] INFO: 上传响应: {"code":0,"data":{"id":2011,"configId":30,"path":"HGZC/2025/07/20/2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","name":"2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","type":"application/zip","size":681367,"formattedSize":"665 KB","creator":"163","createTime":1753006953996},"msg":""}
+[2025-07-20 18:22:34] INFO: 创建状态码: 200
+[2025-07-20 18:22:34] INFO: 创建响应: {"code":0,"data":"eda2f726cd3b4174873496b0c5227ba7","msg":""}
+
+[2025-07-20 18:22:34] INFO: 上传状态码: 200
+[2025-07-20 18:22:34] INFO: 上传响应: {"code":0,"data":{"id":2012,"configId":30,"path":"HGZC/2025/07/20/2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","name":"2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","type":"application/zip","size":784450,"formattedSize":"766 KB","creator":"163","createTime":1753006954275},"msg":""}
+[2025-07-20 18:22:34] INFO: 创建状态码: 200
+[2025-07-20 18:22:34] INFO: 创建响应: {"code":0,"data":"d328636296f244feb6060f5a7ea54e53","msg":""}
+
+[2025-07-20 18:22:34] INFO: 上传状态码: 200
+[2025-07-20 18:22:34] INFO: 上传响应: {"code":0,"data":{"id":2013,"configId":30,"path":"HGZC/2025/07/20/2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","name":"2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","type":"application/zip","size":404017,"formattedSize":"394 KB","creator":"163","createTime":1753006954491},"msg":""}
+[2025-07-20 18:22:34] INFO: 创建状态码: 200
+[2025-07-20 18:22:34] INFO: 创建响应: {"code":0,"data":"05c2659bda434ca2a3b809c0f5360e10","msg":""}
+
+[2025-07-20 18:22:34] INFO: 上传状态码: 200
+[2025-07-20 18:22:34] INFO: 上传响应: {"code":0,"data":{"id":2014,"configId":30,"path":"HGZC/2025/07/20/2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","name":"2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","type":"application/zip","size":844293,"formattedSize":"824 KB","creator":"163","createTime":1753006954705},"msg":""}
+[2025-07-20 18:22:34] INFO: 创建状态码: 200
+[2025-07-20 18:22:34] INFO: 创建响应: {"code":0,"data":"0086ad23565c4d39bbaaecc0325684ec","msg":""}
+
+[2025-07-20 18:22:34] INFO: 上传状态码: 200
+[2025-07-20 18:22:34] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-20 18:22:34] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关_附件1\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-20 18:22:36] INFO: 上传状态码: 200
+[2025-07-20 18:22:36] INFO: 上传响应: {"code":0,"data":{"id":2015,"configId":30,"path":"HGZC/2025/07/20/2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","name":"2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","type":"application/zip","size":3107814,"formattedSize":"2 MB","creator":"163","createTime":1753006956499},"msg":""}
+[2025-07-20 18:22:36] INFO: 创建状态码: 200
+[2025-07-20 18:22:36] INFO: 创建响应: {"code":0,"data":"d364fbb28bb04d7bbd8688138bc0b803","msg":""}
+
+[2025-07-20 18:22:36] INFO: 成功创建的政策ID列表：
+[2025-07-20 18:22:36] INFO: ['19cf300811f74919ab760af254d69348', 'b6576ecfd64c4e08b69c9f95ed5a3c8f', '84ac7c19af6645cfb11ca3b5325cbc0e', 'cc91604a057843adb5e6b75bcefe8be0', 'eda2f726cd3b4174873496b0c5227ba7', 'd328636296f244feb6060f5a7ea54e53', '05c2659bda434ca2a3b809c0f5360e10', '0086ad23565c4d39bbaaecc0325684ec', 'd364fbb28bb04d7bbd8688138bc0b803']
+
+[2025-07-20 18:32:50] INFO: 上传状态码: 200
+[2025-07-20 18:32:50] INFO: 上传响应: {"code":0,"data":{"id":2016,"configId":30,"path":"HGZC/2025/07/20/2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":531736,"formattedSize":"519 KB","creator":"163","createTime":1753007570529},"msg":""}
+[2025-07-20 18:32:50] INFO: 创建状态码: 200
+[2025-07-20 18:32:50] INFO: 创建响应: {"code":0,"data":"18f0ed0ab5884a83a4dbce8cd4d8df4e","msg":""}
+
+[2025-07-20 18:32:50] INFO: 上传状态码: 200
+[2025-07-20 18:32:50] INFO: 上传响应: {"code":0,"data":{"id":2017,"configId":30,"path":"HGZC/2025/07/20/2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-11_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":537230,"formattedSize":"524 KB","creator":"163","createTime":1753007570838},"msg":""}
+[2025-07-20 18:32:50] INFO: 创建状态码: 200
+[2025-07-20 18:32:50] INFO: 创建响应: {"code":0,"data":"abffb368a8d745b8b54ec4c43cf96522","msg":""}
+
+[2025-07-20 18:32:51] INFO: 上传状态码: 200
+[2025-07-20 18:32:51] INFO: 上传响应: {"code":0,"data":{"id":2018,"configId":30,"path":"HGZC/2025/07/20/2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-09_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":528174,"formattedSize":"515 KB","creator":"163","createTime":1753007571018},"msg":""}
+[2025-07-20 18:32:51] INFO: 创建状态码: 200
+[2025-07-20 18:32:51] INFO: 创建响应: {"code":0,"data":"6c400bd1ac844d0294f9c349189ed455","msg":""}
+
+[2025-07-20 18:32:51] INFO: 上传状态码: 200
+[2025-07-20 18:32:51] INFO: 上传响应: {"code":0,"data":{"id":2019,"configId":30,"path":"HGZC/2025/07/20/2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","name":"2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-04-04_国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告.zip","type":"application/zip","size":525117,"formattedSize":"512 KB","creator":"163","createTime":1753007571246},"msg":""}
+[2025-07-20 18:32:51] INFO: 创建状态码: 200
+[2025-07-20 18:32:51] INFO: 创建响应: {"code":0,"data":"157b671a9d98416f84d5d2c1f4cc4b2f","msg":""}
+
+[2025-07-20 18:32:51] INFO: 上传状态码: 200
+[2025-07-20 18:32:51] INFO: 上传响应: {"code":0,"data":{"id":2020,"configId":30,"path":"HGZC/2025/07/20/2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","name":"2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-03-08_国务院关税税则委员会关于对原产于加拿大的部分进口商品加征关税的公告.zip","type":"application/zip","size":681368,"formattedSize":"665 KB","creator":"163","createTime":1753007571493},"msg":""}
+[2025-07-20 18:32:51] INFO: 创建状态码: 200
+[2025-07-20 18:32:51] INFO: 创建响应: {"code":0,"data":"07e7d439ddae49b5ba120ed722bb0f95","msg":""}
+
+[2025-07-20 18:32:51] INFO: 上传状态码: 200
+[2025-07-20 18:32:51] INFO: 上传响应: {"code":0,"data":{"id":2021,"configId":30,"path":"HGZC/2025/07/20/2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","name":"2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-03-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","type":"application/zip","size":784449,"formattedSize":"766 KB","creator":"163","createTime":1753007571771},"msg":""}
+[2025-07-20 18:32:51] INFO: 创建状态码: 200
+[2025-07-20 18:32:51] INFO: 创建响应: {"code":0,"data":"3ea30740e44f47d1a9395f32255a96a9","msg":""}
+
+[2025-07-20 18:32:52] INFO: 上传状态码: 200
+[2025-07-20 18:32:52] INFO: 上传响应: {"code":0,"data":{"id":2022,"configId":30,"path":"HGZC/2025/07/20/2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","name":"2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-02-04_国务院关税税则委员会关于对原产于美国的部分进口商品加征关税的公告.zip","type":"application/zip","size":709293,"formattedSize":"692 KB","creator":"163","createTime":1753007572108},"msg":""}
+[2025-07-20 18:32:52] INFO: 创建状态码: 200
+[2025-07-20 18:32:52] INFO: 创建响应: {"code":0,"data":"e92cc31a71e448df83b73dbce89d6b1d","msg":""}
+
+[2025-07-20 18:32:52] INFO: 上传状态码: 200
+[2025-07-20 18:32:52] INFO: 上传响应: {"code":0,"data":{"id":2023,"configId":30,"path":"HGZC/2025/07/20/2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","name":"2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2025-01-26_关于调整海南自由贸易港原辅料“零关税”政策的通知.zip","type":"application/zip","size":844291,"formattedSize":"824 KB","creator":"163","createTime":1753007572399},"msg":""}
+[2025-07-20 18:32:52] INFO: 创建状态码: 200
+[2025-07-20 18:32:52] INFO: 创建响应: {"code":0,"data":"206f7347d05a4a51afb78bd8ecfb10cb","msg":""}
+
+[2025-07-20 18:32:52] INFO: 上传状态码: 200
+[2025-07-20 18:32:52] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-20 18:32:52] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关_附件1\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-20 18:32:53] INFO: 上传状态码: 200
+[2025-07-20 18:32:53] INFO: 上传响应: {"code":0,"data":{"id":2024,"configId":30,"path":"HGZC/2025/07/20/2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","name":"2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/20/2024-12-28_国务院关税税则委员会关于2025年关税调整方案的公告.zip","type":"application/zip","size":3107804,"formattedSize":"2 MB","creator":"163","createTime":1753007573016},"msg":""}
+[2025-07-20 18:32:53] INFO: 创建状态码: 200
+[2025-07-20 18:32:53] INFO: 创建响应: {"code":0,"data":"88893c7afcc3497b814544082cc9e4ba","msg":""}
+
+[2025-07-20 18:32:53] INFO: 成功创建的政策ID列表：
+[2025-07-20 18:32:53] INFO: ['18f0ed0ab5884a83a4dbce8cd4d8df4e', 'abffb368a8d745b8b54ec4c43cf96522', '6c400bd1ac844d0294f9c349189ed455', '157b671a9d98416f84d5d2c1f4cc4b2f', '07e7d439ddae49b5ba120ed722bb0f95', '3ea30740e44f47d1a9395f32255a96a9', 'e92cc31a71e448df83b73dbce89d6b1d', '206f7347d05a4a51afb78bd8ecfb10cb', '88893c7afcc3497b814544082cc9e4ba']
 

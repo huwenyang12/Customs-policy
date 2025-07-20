@@ -106,7 +106,7 @@ async def run_hgfg_spider():
                         fwjg = "海关总署"
 
                         # 唯一ID
-                        policy_id = f"{title}-{fbwh}"
+                        policy_id = f"{fbsj}-{fbwh}"
 
                         # 是否有效
                         efficacy = "有效"

@@ -16,7 +16,7 @@ from utils.page_utils import sww_fbwh,sww_fbsj
 async def run_sww_spider():
 
     # 读取Excel文档，判断驱虫条件
-    excel_path = os.path.join(DATA_DIR, "商务委.xlsx")
+    excel_path = os.path.join(DOWNLOAD_SWW_DIR, "商务委.xlsx")
     json_path = os.path.join(DATA_DIR, "商务委.json")
     existing_keys = {} # 初始化
     if os.path.exists(excel_path):
@@ -35,7 +35,7 @@ async def run_sww_spider():
 
     try:
         async with async_playwright() as p:
-            browser = await p.firefox.launch(headless=False)
+            browser = await p.firefox.launch(headless=True)
             context = await browser.new_context(accept_downloads=True, locale="zh-CN")
             page = await context.new_page()
             await page.goto("http://www.mofcom.gov.cn/zcfb/index.html", wait_until="networkidle")

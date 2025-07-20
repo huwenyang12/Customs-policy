@@ -16,7 +16,7 @@ from utils.file_utils import clean_filename, download_file
 async def run_yjj_spider():
 
     # 读取Excel文档，判断驱虫条件
-    excel_path = os.path.join(DATA_DIR, "药监局.xlsx")
+    excel_path = os.path.join(DOWNLOAD_YJJ_DIR, "药监局.xlsx")
     json_path = os.path.join(DATA_DIR, "药监局.json")
     existing_keys = {} # 初始化
     if os.path.exists(excel_path):
@@ -35,11 +35,11 @@ async def run_yjj_spider():
 
     try:
         async with async_playwright() as p:
-            browser = await p.firefox.launch(headless=True)
+            browser = await p.firefox.launch(headless=False)
             context = await browser.new_context(accept_downloads=True, locale="zh-CN")
             page = await context.new_page()
             await page.goto("https://www.nmpa.gov.cn/xxgk/ggtg/index.html", wait_until="networkidle")
-            await page.wait_for_timeout(3000)
+            await page.wait_for_timeout(6000)
 
             sum = 0 # 计数器
             for page_num in range(1, MAX_PAGES_YJJ + 1):

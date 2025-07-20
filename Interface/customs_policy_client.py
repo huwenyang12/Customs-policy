@@ -24,7 +24,7 @@ logging.basicConfig(
 )
 
 class CustomsPolicyClient:
-    def __init__(self, token: str, tenant_id: str = "1"):
+    def __init__(self, token, tenant_id: str = "1"):
         self.token = token
         self.tenant_id = tenant_id
         self.upload_url = "http://123.60.179.95:48082/admin-api/infra/file/upload-info"
@@ -43,7 +43,7 @@ class CustomsPolicyClient:
             "Content-Type": "application/json"
         }
 
-    def upload_file(self, file_path: str, upload_path: str = "hgzc") -> Optional[str]:
+    def upload_file(self, file_path, upload_path: str = "HGZC"):
         try:
             with open(file_path, "rb") as f:
                 files = {"file": f}
@@ -63,7 +63,7 @@ class CustomsPolicyClient:
             logging.exception("上传文件出错")
             return None
 
-    def create_policy(self, data: dict) -> Optional[str]:
+    def create_policy(self, data):
         try:
             resp = requests.post(self.create_url, headers=self.headers, json=data)
             logging.info(f"创建状态码: {resp.status_code}")
@@ -79,7 +79,7 @@ class CustomsPolicyClient:
             return None
 
 
-    def delete_policy(self, policy_id: str) -> bool:
+    def delete_policy(self, policy_id):
         try:
             url = f"{self.delete_url}?id={policy_id}"
             resp = requests.delete(url, headers=self.headers)
@@ -90,14 +90,14 @@ class CustomsPolicyClient:
             logging.exception("删除政策出错")
             return False
         
-    def timestamp_ms_str(self, date_str: str) -> str:
+    def timestamp_ms_str(self, date_str):
         try:
             ts = int(datetime.strptime(date_str, "%Y-%m-%d").timestamp() * 1000)
             return str(ts)
         except Exception:
             return ""
     
-    def checkout_policy_exists(self, policy_id: str) -> bool:
+    def checkout_policy_exists(self, policy_id):
         """
         检查指定的 policyId 是否已存在。
         返回 True 表示存在，False 表示可以创建。
