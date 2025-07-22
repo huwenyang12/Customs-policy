@@ -12,7 +12,7 @@ DOWNLOAD_SWW_DIR = os.path.join(BASE_DIR, "output", "downloads", "sww") # 商务
 DOWNLOAD_HGFG_DIR = os.path.join(BASE_DIR, "output", "downloads", "hgfg") # 海关法规
 DOWNLOAD_ZCJD_DIR = os.path.join(BASE_DIR, "output", "downloads", "zcjd") # 海关法规_政策解读
 DOWNLOAD_GXB_DIR = os.path.join(BASE_DIR, "output", "downloads", "gxb") # 工信部
-DOWNLOAD_YJJ_DIR = os.path.join(BASE_DIR, "output", "downloads", "hgfg") # 药监局
+DOWNLOAD_YJJ_DIR = os.path.join(BASE_DIR, "output", "downloads", "yjj") # 药监局
 
 
 # 确保目录存在
@@ -29,8 +29,8 @@ os.makedirs(DOWNLOAD_YJJ_DIR, exist_ok=True) #药监局
 
 
 # 全局参数,设置最大爬取页数
-MAX_PAGES_HGFG = 1 # 海关法规
-MAX_PAGES_ZCJD = 1 # 海关法规_政策解读
+# MAX_PAGES_HGFG = 1 # 海关法规
+# MAX_PAGES_ZCJD = 1 # 海关法规_政策解读
 MAX_PAGES_CZB = 1 # 财政部
 MAX_PAGES_SWW =1 # 商务委最大爬取页数【固定值=1】
 MAX_PAGES_GXB =1 # 工信部最大爬取页数【固定值=1】

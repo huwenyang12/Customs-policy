@@ -21,42 +21,28 @@ async def czb_fbwh(page):
 
 
 # 商务委=================================================================================
-# 商务委_发布时间
 async def sww_fbsj(page):
     selectors = [
-        "div.art-con-gonggao",
-        "p.MsoNormal:nth-child(9)"
+        "div.f-cb > div > div:nth-child(3) > div",
+        "div > div.art-con.art-con-bottonmLine > p:nth-child(3)",
+        "div.art-con.art-con-bottonmLine > h2 > strong",
     ]
     for selector in selectors:
-        if selector == "div.art-con-gonggao":
-            el = await page.query_selector(selector)
-            if el:
-                text = await el.inner_text()
-                if text.strip():
-                    time_match = re.search(r'【发文日期】\s*(\d{4}年\d{1,2}月\d{1,2}日)', text.strip())
-                    if time_match:
-                        return time_match.group(1) # 表示获取第一个括号内匹配的内容
-        else:
-            el = await page.query_selector(selector)
-            if el:
-                text = await el.inner_text()
-                if text.strip():
-                    return text.strip()
-    return ""
-# 商务委_发布文号
-async def sww_fbwh(page):
-    selectors = [
-        "div.art-con-gonggao"
-    ]
-    for selector in selectors:
+        print(f"尝试选择器: {selector}")
         el = await page.query_selector(selector)
         if el:
             text = await el.inner_text()
+            print(f"提取的文本: {text}")
             if text.strip():
-                wenhao_match = re.search(r'【发布文号】([^】]+)【', text.strip())
-                if wenhao_match:
-                    return wenhao_match.group(1) # 表示获取第一个括号内匹配的内容
-    return "无文号"
+                match = re.search(r'(?:第)?(\d+)号', text.strip())
+                if match:
+                    print(f"匹配成功：{match.group(0)}")
+                    return match.group(1)
+                else:
+                    print("没匹配到正则")
+        else:
+            print(f"找不到元素: {selector}")
+    return ""
 
 # 工信部===================================================================================
 # 工信部_发布时间

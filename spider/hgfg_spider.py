@@ -10,9 +10,11 @@ import img2pdf
 from urllib.parse import urljoin
 from PIL import Image
 
-from config import DATA_DIR, DOWNLOAD_HGFG_DIR, MAX_PAGES_HGFG
+from config import DATA_DIR, DOWNLOAD_HGFG_DIR
 from logger import log_info, log_error
 from utils.file_utils import clean_filename, download_file
+
+MAX_PAGES_HGFG = 2
 
 async def run_hgfg_spider():
 
@@ -22,17 +24,19 @@ async def run_hgfg_spider():
     existing_keys = set()  # 初始化
     existing_data = []  # 存储现有数据
     
-    if os.path.exists(excel_path):
+    if os.path.exists(json_path):
         try:
-            df_existing = pd.read_excel(excel_path)
-            existing_keys = set(zip(df_existing["发布时间"], df_existing["政策标题"]))
-            existing_data = df_existing.to_dict('records')
-            log_info(f"已有 {len(df_existing)} 条记录，重复标题和时间将跳过。")
+            with open(json_path, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+            existing_keys = set((item["发布时间"], item["政策标题"]) for item in existing_data)
+            log_info(f"已有 {len(existing_data)} 条记录，重复标题和时间将跳过。")
         except Exception as e:
-            log_error(f"读取 Excel 文件出错: {e}")
+            log_error(f"读取 JSON 文件出错: {e}")
             existing_data = []
+            existing_keys = set()
     else:
         existing_data = []
+        existing_keys = set()
 
     # 使用列表存储字典，每个字典代表一条记录
     new_records = []
@@ -74,8 +78,8 @@ async def run_hgfg_spider():
                         print("发布日期:", fbsj)
                         
                         # 判断去重 - 使用原始标题进行去重判断
-                        if (fbsj, title_raw) in existing_keys:
-                            log_info(f"重复记录: {fbsj} - {title_raw}")
+                        if (fbsj, title) in existing_keys:
+                            log_info(f"重复记录: {fbsj} - {title}")
                             if detail_page:
                                 await detail_page.close()
                             continue
@@ -106,7 +110,8 @@ async def run_hgfg_spider():
                         fwjg = "海关总署"
 
                         # 唯一ID
-                        policy_id = f"{fbsj}-{fbwh}"
+                        policy_id = f"{fwjg}-{fbsj}-{title}" if not fbwh else f"{fwjg}-{fbsj}-{fbwh}"
+
 
                         # 是否有效
                         efficacy = "有效"

@@ -3,67 +3,78 @@ import pandas as pd
 import time
 import os
 import re
+import json
+import zipfile
 from playwright.async_api import async_playwright
 import img2pdf
 from urllib.parse import urljoin
 from PIL import Image
 
-
-from config import DATA_DIR, DOWNLOAD_ZCJD_DIR, MAX_PAGES_ZCJD
+from config import DATA_DIR, DOWNLOAD_ZCJD_DIR
 from logger import log_info, log_error
 from utils.file_utils import clean_filename, download_file
 
+MAX_PAGES_ZCJD = 2
+
 async def run_zcjd_spider():
 
-    # 读取Excel文档，判断驱虫条件
-    excel_path = os.path.join(DATA_DIR, "政策解读.xlsx")
+    # 读取Excel文档，判断去重条件
+    excel_path = os.path.join(DOWNLOAD_ZCJD_DIR, "政策解读.xlsx")
     json_path = os.path.join(DATA_DIR, "政策解读.json")
-    existing_keys = {} # 初始化
-    if os.path.exists(excel_path):
+    existing_keys = set()  # 初始化
+    existing_data = []  # 存储现有数据
+    
+    if os.path.exists(json_path):
         try:
-            df_existing = pd.read_excel(excel_path)
-            existing_keys = set(zip(df_existing["发布时间"], df_existing["政策标题"]))
-            log_info( f"已有 {len(df_existing)} 条记录，重复标题和时间将跳过。")
+            with open(json_path, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+            existing_keys = set((item["发布时间"], item["政策标题"]) for item in existing_data)
+            log_info(f"已有 {len(existing_data)} 条记录，重复标题和时间将跳过。")
         except Exception as e:
-            log_error( f"读取 Excel 文件出错: {e}")
-            df_existing = pd.DataFrame()
+            log_error(f"读取 JSON 文件出错: {e}")
+            existing_data = []
+            existing_keys = set()
     else:
-        df_existing = pd.DataFrame()
+        existing_data = []
+        existing_keys = set()
 
-    # 发布时间、发文机关、发布标题、生效日期、发布文号、附件列表
-    FBSJ_list, FWJG_list, FBBT_list, SXRQ_list, FBWH_list, HREF_list = [], [], [], [], [], []
+    # 使用列表存储字典，每个字典代表一条记录
+    new_records = []
 
     try:
         async with async_playwright() as p:
-            browser = await p.firefox.launch(headless=False)
+            browser = await p.firefox.launch(headless=True)
             context = await browser.new_context(accept_downloads=True, locale="zh-CN")
             page = await context.new_page()
             await page.goto("http://www.customs.gov.cn/customs/302249/302270/302272/index.html", wait_until="networkidle")
             await page.wait_for_timeout(3000)
 
-            sum = 0 # 计数器
+            sum = 0  # 计数器
             for page_num in range(1, MAX_PAGES_ZCJD + 1):
-                log_info( f"\n正在抓取第 {page_num} 页")
+                log_info(f"\n正在抓取第 {page_num} 页")
+                
                 lis = await page.query_selector_all('.conList_ull > li')
-                log_info(f"长度,{len(lis)}")
                 if not lis:
                     break
+                
                 # 循环li列表
                 for i, li in enumerate(lis):
                     detail_page = None
                     try:
                         # 标题
                         title_el = await li.query_selector("a")
-                        title = await title_el.inner_text() if title_el else ""
+                        title = await title_el.get_attribute("title") if title_el else ""
 
                         # 发布时间
                         fbsj_el = await li.query_selector("span")
                         fbsj_raw = await fbsj_el.inner_html() if fbsj_el else ""
-                        match = re.search(r'\d{4}-\d{2}-\d{2}', fbsj_raw)# 用正则提取日期格式
+                        match = re.search(r'\d{4}-\d{2}-\d{2}', fbsj_raw)  # 用正则提取日期格式
                         fbsj = match.group() if match else ""
+                        print("发布日期:", fbsj)
+                        
                         # 判断去重
                         if (fbsj, title) in existing_keys:
-                            log_info( f"重复记录: {fbsj} - {title}")
+                            log_info(f"重复记录: {fbsj} - {title}")
                             if detail_page:
                                 await detail_page.close()
                             continue
@@ -73,7 +84,8 @@ async def run_zcjd_spider():
                         if not href:
                             continue
                         href = urljoin(page.url, href)
-                        # 2.点击打开新页面（模拟真实行为）
+                        
+                        # 点击打开新页面（模拟真实行为）
                         detail_page, _ = await asyncio.gather(
                             context.wait_for_event("page"),
                             title_el.click()
@@ -81,33 +93,39 @@ async def run_zcjd_spider():
                         await detail_page.goto(href, wait_until="networkidle")
                         await detail_page.wait_for_timeout(1500)
 
-                        # # 发布文号
-                        # fbwh_el = await detail_page.query_selector("//*[@id='hgfg_con']/div[2]/div[1]")
-                        # fbwh_WH = await fbwh_el.inner_text() if fbwh_el else ""
-                        # fbwh = fbwh_WH.split('】')[-1].strip() if '】' in fbwh_WH else fbwh_WH
-                        # # 发文机关
-                        # fwjg_el = await detail_page.query_selector(".hgzs_lis2 > div:nth-child(2)")
-                        # fwjg_FWJG = await fwjg_el.inner_text() if fwjg_el else ""
-                        # fwjg = fwjg_FWJG.split('】')[-1].strip() if '】' in fwjg_FWJG else fwjg_FWJG
+                        # 发文机关固定为政策解读
+                        fwjg = "政策解读"
 
-                        # # 生效日期
-                        # sxrq_el = await detail_page.query_selector(".hgzs_lis3 > div:nth-child(2)")
-                        # sxrq_SXRQ = await sxrq_el.inner_text() if sxrq_el else ""
-                        # sxrq = sxrq_SXRQ.split('】')[-1].strip() if '】' in sxrq_SXRQ else sxrq_SXRQ
+                        # 发布文号为空
+                        fbwh = ""
+
+                        # 生效日期为空
+                        sxrq = ""
+
+                        # 唯一ID
+                        policy_id = f"{fwjg}-{fbsj}-{title}" if not fbwh else f"{fwjg}-{fbsj}-{fbwh}"
+
+
+                        # 是否有效
+                        efficacy = "有效"
 
                         # 解读政策链接
-                        zc_href = await detail_page.query_selector("div.easysite-related-news > ul > li > a")
-                        file_href = await zc_href.get_attribute("href")
-                        if not file_href:
-                            continue
-                        if file_href.startswith("/"):
-                            file_href = "http://www.customs.gov.cn" + file_href
+                        policy_links = []
+                        zc_href_elements = await detail_page.query_selector_all("div.easysite-related-news > ul > li > a")
+                        for zc_href in zc_href_elements:
+                            file_href = await zc_href.get_attribute("href")
+                            link_text = await zc_href.inner_text()
+                            if file_href:
+                                if file_href.startswith("/"):
+                                    file_href = "http://www.customs.gov.cn" + file_href
+                                policy_links.append({"text": link_text, "url": file_href})
 
-                        # # pdf文件下载
+                        # PDF文件下载
                         unique_suffix = str(int(time.time() * 1000))
                         pdf_filename = f"{clean_filename(title)}_{unique_suffix}"
                         png_path = os.path.join(DOWNLOAD_ZCJD_DIR, pdf_filename + ".png")
                         await detail_page.screenshot(path=png_path, full_page=True)
+                        
                         # 图片格式转换
                         def convert_png_to_rgb(png_path):
                             im = Image.open(png_path)
@@ -118,20 +136,109 @@ async def run_zcjd_spider():
                                 background.save(rgb_path, "PNG")
                                 return rgb_path
                             return png_path
+                        
                         # 应用转换函数
                         rgb_png_path = convert_png_to_rgb(png_path)
                         pdf_path = os.path.join(DOWNLOAD_ZCJD_DIR, pdf_filename + ".pdf")
                         with open(pdf_path, "wb") as f:
                             f.write(img2pdf.convert(rgb_png_path))
-                        log_info(f"{i+1}.网页PDF保存成功")
+                        log_info(f"{i+1}.PDF保存成功")
 
-                        # 列表追加
-                        HREF_list.append(file_href) # 文件链接列表
-                        FBBT_list.append(title) # 发布标题
-                        FBSJ_list.append(fbsj) # 发布时间
-                        FWJG_list.append("") # 发文机关
-                        FBWH_list.append("") # 发布文号
-                        SXRQ_list.append("") # 生效日期
+                        # 附件下载和保存（政策解读可能没有附件，但保留结构）
+                        href_names = []
+                        downloaded_files = []  # 记录实际下载的文件路径
+                        attachments = await detail_page.query_selector_all("#easysiteText > p > a")
+                        if attachments: 
+                            log_info(f"找到 {len(attachments)} 个附件")
+                        
+                        for a in attachments:
+                            try:
+                                file_href = await a.get_attribute("href")
+                                text = await a.inner_text()
+                                if file_href and any(file_href.endswith(ext) for ext in ['.pdf', '.doc', '.docx', '.xls', '.xlsx', '.zip', '.wps']):
+                                    if file_href.startswith("/"):
+                                        file_href = "http://www.customs.gov.cn" + file_href
+
+                                    suffix = os.path.splitext(file_href)[-1]
+                                    clean_text = clean_filename(text)
+                                    if not clean_text.lower().endswith(suffix.lower()):
+                                        file_name = clean_text + suffix
+                                    else:
+                                        file_name = clean_text
+
+                                    save_path = os.path.join(DOWNLOAD_ZCJD_DIR, file_name)
+                                    await download_file(file_href, save_path, referer=href)
+                                    href_names.append(text)
+                                    downloaded_files.append(save_path)  # 记录下载的文件路径
+                            except Exception as e:
+                                log_error(f"  附件下载处理异常: {e}")
+
+                        # 创建ZIP包
+                        zip_filename = f"{fbsj}_{clean_filename(title)}.zip"
+                        zip_path = os.path.join(DOWNLOAD_ZCJD_DIR, zip_filename)
+                        zip_file_count = 0
+                        
+                        try:
+                            with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+                                # 添加PDF截图到ZIP
+                                if os.path.exists(pdf_path):
+                                    zipf.write(pdf_path, os.path.basename(pdf_path))
+                                    zip_file_count += 1
+                                    log_info(f"PDF文件已添加到ZIP包")
+                                
+                                # 添加PNG截图到ZIP
+                                if os.path.exists(rgb_png_path):
+                                    zipf.write(rgb_png_path, os.path.basename(rgb_png_path))
+                                    zip_file_count += 1
+                                    log_info(f"PNG截图已添加到ZIP包")
+                                
+                                # 添加附件到ZIP
+                                for file_path in downloaded_files:
+                                    if os.path.exists(file_path):
+                                        zipf.write(file_path, os.path.basename(file_path))
+                                        zip_file_count += 1
+                                        log_info(f"附件 {os.path.basename(file_path)} 已添加到ZIP包")
+                            
+                            log_info(f"ZIP包创建成功: {zip_path}, 包含 {zip_file_count} 个文件")
+                            
+                            # 清理临时文件（可选）
+                            try:
+                                if os.path.exists(png_path):
+                                    os.remove(png_path)
+                                if os.path.exists(rgb_png_path) and rgb_png_path != png_path:
+                                    os.remove(rgb_png_path)
+                                if os.path.exists(pdf_path):
+                                    os.remove(pdf_path)
+                                for file_path in downloaded_files:
+                                    if os.path.exists(file_path):
+                                        os.remove(file_path)
+                                log_info("临时文件清理完成")
+                            except Exception as e:
+                                log_error(f"清理临时文件时出错: {e}")
+                                
+                        except Exception as e:
+                            log_error(f"创建ZIP包时出错: {e}")
+                            zip_path = ""
+                            zip_file_count = 0
+                        
+                        # 创建单条记录字典
+                        record = {
+                            "政策标题": title,
+                            "发文机关": fwjg,
+                            "详情页链接": href,  # 添加详情页URL
+                            "发布时间": fbsj,
+                            "生效日期": sxrq,
+                            "发布文号": fbwh,
+                            "是否有效": efficacy,
+                            "zip包文件数量": zip_file_count,  # ZIP包内文件数量
+                            "zip包路径": zip_path,  # ZIP包完整路径
+                            "附件列表": href_names,  # 直接存储列表，不转换为字符串
+                            "政策链接": policy_links,  # 政策解读特有的相关政策链接
+                            "唯一ID": policy_id,  # 唯一ID
+                        }
+                        
+                        # 添加到新记录列表
+                        new_records.append(record)
 
                         sum += 1
                         await detail_page.close()
@@ -155,13 +262,32 @@ async def run_zcjd_spider():
     except Exception as e:
         log_error(f"Playwright 主流程异常: {e}")
 
-    if FBSJ_list:
-        df_new = pd.DataFrame(list(zip(FBBT_list, FWJG_list, FBSJ_list, SXRQ_list, FBWH_list, HREF_list)),
-                              columns=["政策标题", "发文机关", "发布时间", "生效日期", "发布文号","政策链接"])
-        df_all = pd.concat([df_existing, df_new], ignore_index=True) if not df_existing.empty else df_new
-
+    # 数据保存
+    if new_records:
+        # 合并现有数据和新数据
+        all_records = existing_data + new_records
+        
+        # 保存为JSON格式（直接保存字典列表）
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(all_records, f, ensure_ascii=False, indent=4)
+        
+        # 保存为Excel格式
+        df_all = pd.DataFrame(all_records)
+        # 对于Excel，将列表字段转换为字符串格式
+        df_all['附件列表'] = df_all['附件列表'].apply(lambda x: str(x) if x else "[]")
+        df_all['政策链接'] = df_all['政策链接'].apply(lambda x: str(x) if x else "[]")
         df_all.to_excel(excel_path, index=False)
-        df_all.to_json(json_path, orient="records", force_ascii=False, indent=4)
-        log_info(f"\n共保存 {len(df_all)} 条记录,新增 {sum} 条记录")
+        
+        log_info(f"\n共保存 {len(all_records)} 条记录,新增 {sum} 条记录")
+        
+        # 返回完整的记录列表
+        return all_records
     else:
         log_info(f"\n本次无新增记录")
+        return existing_data
+
+# 如果你只想获取新增的记录，可以添加这个函数
+async def get_new_zcjd_records_only():
+    """只返回新增的记录"""
+    # ... 在run_zcjd_spider函数中，你可以直接返回new_records
+    pass
