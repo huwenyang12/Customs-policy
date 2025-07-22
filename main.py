@@ -10,12 +10,12 @@ from spider.yjj_spider import run_yjj_spider # 药监局
 
 
 async def main():
-    # await run_hgfg_spider()
-    # await run_zcjd_spider()
-    # await run_czb_spider()
-    # await run_sww_spider()
+    await run_hgfg_spider()
+    await run_zcjd_spider()
+    await run_czb_spider()
+    await run_sww_spider()
     await run_gxb_spider()
-    # await run_yjj_spider()
+    await run_yjj_spider()
 
 if __name__ == "__main__":
     asyncio.run(main())

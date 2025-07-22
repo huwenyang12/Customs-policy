@@ -17,7 +17,14 @@ file_names = [
 ]
 
 # JSON 文件目录
-json_dir = r"D:\海关接口\海关_附件1\output\data"
+json_dir = r"D:\海关接口\海关数据推送\output\data"
+
+# 全局统计变量
+total_success = 0
+total_failed = 0
+total_skip = 0
+total_processed = 0
+failed_count_list = []
 
 def read_file(path):
     try:
@@ -30,6 +37,8 @@ def read_file(path):
         return []
 
 def process_customs_policies(data_list):
+    global total_success, total_failed, total_skip, total_processed
+    
     success_count = 0
     failed_count = 0
     skip_count = 0
@@ -58,6 +67,7 @@ def process_customs_policies(data_list):
             if not attachment_url:
                 print("文件上传失败，跳过该政策")
                 failed_count += 1
+                failed_count_list.append(policy_id)
                 continue
 
             title = policy["政策标题"]
@@ -89,6 +99,7 @@ def process_customs_policies(data_list):
                 success_count += 1
             else:
                 print("创建失败，尝试回滚删除...")
+                failed_count_list.append(policy_id)
                 deleted = obj.delete_policy(created_id)
                 if deleted:
                     print("已回滚删除")
@@ -97,8 +108,16 @@ def process_customs_policies(data_list):
                 failed_count += 1
 
         except Exception as e:
-            print(f"❌ 处理时出错: {str(e)}")
+            print(f"处理时出错: {str(e)}")
             failed_count += 1
+            created_ids.append(created_id)
+            
+
+    # 更新全局统计
+    total_success += success_count
+    total_failed += failed_count
+    total_skip += skip_count
+    total_processed += len(data_list)
 
     print(f"\n=== 本批处理完成 ===")
     print(f"成功: {success_count} 条")
@@ -111,9 +130,22 @@ def process_customs_policies(data_list):
 
 # 执行处理（循环所有文件）
 if __name__ == "__main__":
+    print("======= 开始批量处理海关政策数据 =======\n")
+    
     for file_name in file_names:
         print(f"\n\n======= 开始处理文件：{file_name} =======")
         path = os.path.join(json_dir, file_name)
         data = read_file(path)
         if data:
             process_customs_policies(data)
+
+    
+    # 记录到日志
+    logging.info("========== 所有文件处理完成 - 最终统计 ==========")
+    logging.info("="*60)
+    logging.info(f"总共处理政策条数: {total_processed} 条")
+    logging.info(f"成功创建政策数量: {total_success} 条")
+    logging.info(f"跳过已存在政策数: {total_skip} 条")
+    logging.info(f"失败处理政策数量: {total_failed} 条")
+    logging.info(f"失败列表：{failed_count_list}")
+    logging.info("="*60)

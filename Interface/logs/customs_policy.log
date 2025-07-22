@@ -525,3 +525,114 @@ AttributeError: 'NoneType' object has no attribute 'get'
 
 [2025-07-22 13:15:31] INFO: 成功创建的政策ID：['32f123847de547e8b9ed40f38c6e6f2e', 'e3f1f78eb0444175803b3e2159744f6d', '8b6c608e7d0242b285a8682f55afb7cd', '704d1f594fe4442eb5fb7ead305b6ba0']
 
+[2025-07-22 15:34:01] INFO: 上传状态码: 200
+[2025-07-22 15:34:01] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-22 15:34:01] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关数据推送\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-22 15:35:40] INFO: 上传状态码: 200
+[2025-07-22 15:35:40] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-22 15:35:40] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关数据推送\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-22 15:35:47] INFO: ========== 所有文件处理完成 - 最终统计 ==========
+[2025-07-22 15:35:47] INFO: ============================================================
+[2025-07-22 15:35:47] INFO: 总共处理文件数量: 6 个
+[2025-07-22 15:35:47] INFO: 总共处理政策条数: 100 条
+[2025-07-22 15:35:47] INFO: 成功创建政策数量: 0 条
+[2025-07-22 15:35:47] INFO: 失败处理政策数量: 1 条
+[2025-07-22 15:35:47] INFO: 跳过已存在政策数: 99 条
+[2025-07-22 15:35:47] INFO: ============================================================
+[2025-07-22 16:21:13] INFO: 上传状态码: 200
+[2025-07-22 16:21:13] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-22 16:21:13] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关数据推送\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-22 16:21:49] INFO: 上传状态码: 503
+[2025-07-22 16:21:49] INFO: 上传响应: 
+[2025-07-22 16:21:49] ERROR: 上传失败
+[2025-07-22 16:21:51] INFO: 上传状态码: 200
+[2025-07-22 16:21:51] INFO: 上传响应: {"code":0,"data":{"id":2202,"configId":30,"path":"HGZC/2025/07/22/2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","name":"2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/22/2025-05-13_国务院关税税则委员会关于调整对原产于美国的进口商品加征关税措施的公告.zip","type":"application/zip","size":531224,"formattedSize":"518 KB","creator":"163","createTime":1753172510915},"msg":""}
+[2025-07-22 16:21:51] INFO: 创建状态码: 200
+[2025-07-22 16:21:51] INFO: 创建响应: {"code":0,"data":"39fe1527617e42789f780bc9d0cd91a7","msg":""}
+
+[2025-07-22 16:21:53] INFO: 上传状态码: 200
+[2025-07-22 16:21:53] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-22 16:21:53] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关数据推送\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-22 16:21:55] INFO: 成功创建的政策ID：['39fe1527617e42789f780bc9d0cd91a7']
+
+[2025-07-22 16:22:06] INFO: ========== 所有文件处理完成 - 最终统计 ==========
+[2025-07-22 16:22:06] INFO: ============================================================
+[2025-07-22 16:22:06] INFO: 总共处理政策条数: 102 条
+[2025-07-22 16:22:06] INFO: 成功创建政策数量: 1 条
+[2025-07-22 16:22:06] INFO: 失败处理政策数量: 3 条
+[2025-07-22 16:22:06] INFO: 跳过已存在政策数: 98 条
+[2025-07-22 16:22:06] INFO: ============================================================
+[2025-07-22 16:28:11] INFO: 上传状态码: 200
+[2025-07-22 16:28:11] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-22 16:28:11] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关数据推送\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-22 16:28:23] INFO: 上传状态码: 200
+[2025-07-22 16:28:23] INFO: 上传响应: {"code":0,"data":{"id":2203,"configId":30,"path":"HGZC/2025/07/22/2025-06-09_政策解读：关于进口乌拉圭豆粕和油菜籽粕检验检疫要求的公告.zip","name":"2025-06-09_政策解读：关于进口乌拉圭豆粕和油菜籽粕检验检疫要求的公告.zip","url":"https://yunkuo-test.obs.cn-east-3.myhuaweicloud.com/HGZC/2025/07/22/2025-06-09_政策解读：关于进口乌拉圭豆粕和油菜籽粕检验检疫要求的公告.zip","type":"application/zip","size":14410703,"formattedSize":"13 MB","creator":"163","createTime":1753172902140},"msg":""}
+[2025-07-22 16:28:23] INFO: 创建状态码: 200
+[2025-07-22 16:28:23] INFO: 创建响应: {"code":0,"data":"d444ffff9eb04a96851a720829babe8c","msg":""}
+
+[2025-07-22 16:28:23] INFO: 成功创建的政策ID：['d444ffff9eb04a96851a720829babe8c']
+
+[2025-07-22 16:28:24] INFO: 上传状态码: 200
+[2025-07-22 16:28:24] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-22 16:28:24] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关数据推送\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-22 16:28:29] INFO: ========== 所有文件处理完成 - 最终统计 ==========
+[2025-07-22 16:28:29] INFO: ============================================================
+[2025-07-22 16:28:29] INFO: 总共处理政策条数: 102 条
+[2025-07-22 16:28:29] INFO: 成功创建政策数量: 1 条
+[2025-07-22 16:28:29] INFO: 失败处理政策数量: 2 条
+[2025-07-22 16:28:29] INFO: 跳过已存在政策数: 99 条
+[2025-07-22 16:28:29] INFO: ============================================================
+[2025-07-22 16:35:29] INFO: 上传状态码: 200
+[2025-07-22 16:35:29] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-22 16:35:29] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关数据推送\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-22 16:35:31] INFO: 上传状态码: 200
+[2025-07-22 16:35:31] INFO: 上传响应: {"code":500,"data":null,"msg":"系统异常"}
+[2025-07-22 16:35:31] ERROR: 上传文件出错
+Traceback (most recent call last):
+  File "d:\海关接口\海关数据推送\Interface\customs_policy_client.py", line 58, in upload_file
+    return data.get("data", {}).get("url")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+[2025-07-22 16:35:36] INFO: ========== 所有文件处理完成 - 最终统计 ==========
+[2025-07-22 16:35:36] INFO: ============================================================
+[2025-07-22 16:35:36] INFO: 总共处理政策条数: 102 条
+[2025-07-22 16:35:36] INFO: 成功创建政策数量: 0 条
+[2025-07-22 16:35:36] INFO: 失败处理政策数量: 2 条
+[2025-07-22 16:35:36] INFO: ['政策解读-2025-06-25-政策解读：海关总署关于进口哈萨克斯坦甜菜粕检验检疫要求的公告', '财政部-2024-12-31-13']
+[2025-07-22 16:35:36] INFO: 跳过已存在政策数: 100 条
+[2025-07-22 16:35:36] INFO: ============================================================
