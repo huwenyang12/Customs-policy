@@ -31,6 +31,9 @@ class CustomsPolicyClient:
         self.create_url = "http://123.60.179.95:48090/admin-api/cms/policy/create"
         self.delete_url = "http://123.60.179.95:48090/admin-api/cms/policy/delete"
         self.select_url = "http://123.60.179.95:48090/admin-api/cms/policy/checkout"
+        self.presign_api = "http://123.60.179.95:48082/admin-api/infra/file/presigned-url"
+        self.today = datetime.now().strftime("%Y-%n")
+        
 
 
         self.upload_headers = {
@@ -43,25 +46,57 @@ class CustomsPolicyClient:
             "Content-Type": "application/json"
         }
 
-    def upload_file(self, file_path, upload_path: str = "HGZC"):
+
+    def upload_file(self, file_path, upload_path: str = None):
+        """
+        使用预签名 URL 上传文件，并返回下载地址。
+        """
+        upload_path = f"/CMS/HGZC/{self.today}"
+
         try:
-            with open(file_path, "rb") as f:
-                files = {"file": f}
-                params = {"path": upload_path}
-                resp = requests.post(self.upload_url, headers=self.upload_headers, files=files, params=params)
-
-            logging.info(f"上传状态码: {resp.status_code}")
-            logging.info(f"上传响应: {resp.text}")
-
-            if resp.status_code == 200:
-                data = resp.json()
-                return data.get("data", {}).get("url")
-            else:
-                logging.error("上传失败")
+            if not os.path.exists(file_path):
+                logging.error(f"文件不存在: {file_path}")
                 return None
+
+            filename = os.path.basename(file_path)
+            full_upload_path = f"{upload_path}/{filename}"
+
+            # Step 1: 获取预签名 URL
+            res = requests.get(self.presign_api, headers=self.upload_headers, params={"path": full_upload_path})
+            logging.info(f"获取预签名响应状态: {res.status_code}")
+            if res.status_code != 200:
+                logging.error(f"获取预签名失败，响应内容: {res.text}")
+                return None
+
+            res_json = res.json()
+            data = res_json.get("data")
+            if not data:
+                logging.error(f"获取预签名失败：{res_json.get('msg', '未知错误')}")
+                return None
+
+            upload_url = data.get("uploadUrl")
+            download_url = data.get("url")
+
+            if not upload_url or not download_url:
+                logging.error("返回的数据缺少 uploadUrl 或 url")
+                return None
+
+            # Step 2: 上传文件到 OSS
+            with open(file_path, "rb") as f:
+                upload_res = requests.put(upload_url, data=f)
+
+            logging.info(f"上传文件响应状态码: {upload_res.status_code}")
+            if upload_res.status_code == 200:
+                logging.info(f"上传成功，下载地址: {download_url}")
+                return download_url
+            else:
+                logging.error(f"上传失败，响应内容: {upload_res.text}")
+                return None
+
         except Exception as e:
-            logging.exception("上传文件出错")
+            logging.exception("上传过程中发生异常")
             return None
+
 
     def create_policy(self, data):
         try:
