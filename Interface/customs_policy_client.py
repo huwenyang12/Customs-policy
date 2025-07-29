@@ -2,6 +2,7 @@ import requests
 import json
 import logging
 import os
+import re
 from typing import Optional
 from datetime import datetime
 
@@ -27,11 +28,11 @@ class CustomsPolicyClient:
     def __init__(self, token, tenant_id: str = "1"):
         self.token = token
         self.tenant_id = tenant_id
-        self.upload_url = "http://123.60.179.95:48082/admin-api/infra/file/upload-info"
-        self.create_url = "http://123.60.179.95:48090/admin-api/cms/policy/create"
-        self.delete_url = "http://123.60.179.95:48090/admin-api/cms/policy/delete"
-        self.select_url = "http://123.60.179.95:48090/admin-api/cms/policy/checkout"
-        self.presign_api = "http://123.60.179.95:48082/admin-api/infra/file/presigned-url"
+        self.upload_url = "http://123.60.179.95:48080/admin-api/infra/file/upload-info"
+        self.create_url = "http://123.60.179.95:48080/admin-api/cms/policy/create"
+        self.delete_url = "http://123.60.179.95:48080/admin-api/cms/policy/delete"
+        self.select_url = "http://123.60.179.95:48080/admin-api/cms/policy/checkout"
+        self.presign_api = "http://123.60.179.95:48080/admin-api/infra/file/acquire-upload-url"
         self.today = datetime.now().strftime("%Y-%n")
         
 
@@ -47,48 +48,65 @@ class CustomsPolicyClient:
         }
 
 
-    def upload_file(self, file_path, upload_path: str = None):
+    def upload_file(self, file_path, module = "cms", bz_name = "hgzc"):
         """
-        使用预签名 URL 上传文件，并返回下载地址。
+        使用 acquire-upload-url 接口上传文件，并返回下载地址。
+        :param file_path: 本地文件路径
+        :param module: 模块名称，默认 "cms"
+        :param bz_name: 业务名称，默认 "hgzc"
+        :return: fileUrl（下载地址）或 None
         """
-        upload_path = f"/CMS/HGZC/{self.today}"
-
         try:
             if not os.path.exists(file_path):
                 logging.error(f"文件不存在: {file_path}")
                 return None
 
-            filename = os.path.basename(file_path)
-            full_upload_path = f"{upload_path}/{filename}"
+            file_name = os.path.basename(file_path)
+            file_size = os.path.getsize(file_path)
 
-            # Step 1: 获取预签名 URL
-            res = requests.get(self.presign_api, headers=self.upload_headers, params={"path": full_upload_path})
+            # 上传参数
+            logging.info(f"上传参数：fileName={file_name}, module={module}, bzName={bz_name}, size={file_size}")
+
+            # Step 1: 获取上传地址
+            params = {
+                "fileName": file_name,
+                "module": module,
+                "bzName": bz_name,
+                "size": file_size
+            }
+            
+            res = requests.post(self.presign_api, headers=self.upload_headers, json=params)
+
+            
             logging.info(f"获取预签名响应状态: {res.status_code}")
             if res.status_code != 200:
                 logging.error(f"获取预签名失败，响应内容: {res.text}")
                 return None
 
             res_json = res.json()
+            # logging.info(f"接口返回完整内容: {res_json}")
             data = res_json.get("data")
             if not data:
-                logging.error(f"获取预签名失败：{res_json.get('msg', '未知错误')}")
+                logging.error(f"获名失败取预签：{res_json.get('msg', '未知错误')}")
+                logging.error(f"获取预签名失败：{res.text}")
                 return None
 
             upload_url = data.get("uploadUrl")
-            download_url = data.get("url")
+            file_url = data.get("url")
 
-            if not upload_url or not download_url:
-                logging.error("返回的数据缺少 uploadUrl 或 url")
+
+            if not upload_url or not file_url:
+                logging.error("返回的数据缺少 uploadUrl 或 fileUrl")
                 return None
 
-            # Step 2: 上传文件到 OSS
+            # Step 2: 上传文件到对象存储
             with open(file_path, "rb") as f:
                 upload_res = requests.put(upload_url, data=f)
 
             logging.info(f"上传文件响应状态码: {upload_res.status_code}")
-            if upload_res.status_code == 200:
-                logging.info(f"上传成功，下载地址: {download_url}")
-                return download_url
+            if upload_res.status_code in [200, 201]:
+                logging.info(f"上传成功，下载地址: {file_url}")
+                return file_url
             else:
                 logging.error(f"上传失败，响应内容: {upload_res.text}")
                 return None

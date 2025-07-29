@@ -79,7 +79,7 @@ def process_customs_policies(file_label, data_list):
             created_id = obj.create_policy(policy_data)
             if created_id:
                 print(f"创建成功，ID: {created_id}")
-                result["success"].append(policy_id)
+                result["success"].append(created_id)
             else:
                 print("创建失败，尝试回滚删除...")
                 obj.delete_policy(created_id)
@@ -121,7 +121,7 @@ def run_interface():
     logging.info(f"总计失败：{total_failed} 条")
     logging.info(f"总计跳过：{total_skipped} 条\n")
     logging.info(f"成功政策ID列表：{success_ids}")
-    logging.info(f"失败政策ID列表：{failed_ids}\n")
+    logging.info(f"失败政策policyId列表：{failed_ids}\n")
 
     print("\n========== 📂 每个文件处理情况 ==========")
     for label, result in all_results.items():
