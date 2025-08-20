@@ -105,7 +105,7 @@ async def run_gxb_spider():
 
 
                         # 是否有效
-                        efficacy = "有效"
+                        efficacy = "1"
 
                         # 生效日期 - 工信部通常没有明确的生效日期，可以使用发布日期或留空
                         sxrq = fbsj  # 默认使用发布日期作为生效日期

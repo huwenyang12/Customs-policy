@@ -107,7 +107,7 @@ async def run_zcjd_spider():
 
 
                         # 是否有效
-                        efficacy = "有效"
+                        efficacy = "1"
 
                         # 解读政策链接
                         policy_links = []

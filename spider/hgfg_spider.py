@@ -114,7 +114,7 @@ async def run_hgfg_spider():
 
 
                         # 是否有效
-                        efficacy = "有效"
+                        efficacy = "1"
 
                         # 生效日期
                         sxrq_el = await detail_page.query_selector(".hgzs_lis3 > div:nth-child(2)")

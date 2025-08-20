@@ -116,7 +116,7 @@ async def run_sww_spider():
 
 
                         # 是否有效
-                        efficacy = "有效"
+                        efficacy = "1"
 
                         # PDF文件下载
                         unique_suffix = str(int(time.time() * 1000))

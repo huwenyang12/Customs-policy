@@ -110,7 +110,7 @@ async def run_czb_spider():
 
 
                         # 是否有效（财政部一般默认有效）
-                        efficacy = "有效"
+                        efficacy = "1"
 
                         # 生效日期（财政部通常与发布日期相同，也可以根据实际情况调整）
                         sxrq = fbsj
