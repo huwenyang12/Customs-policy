@@ -7,7 +7,7 @@ from customs_policy_client import CustomsPolicyClient
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 # 初始化客户端
-obj = CustomsPolicyClient(token="9591bca2739d476ea4ef77ce3df5908d")
+obj = CustomsPolicyClient(token="7adc5c851d4e45b897abd643b334d8da")
 
 file_names = [
     "海关法规.json",
