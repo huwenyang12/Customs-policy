@@ -1,1 +1,9 @@
-*.zip
+# *.zip
+
+# *.json
+
+# *.log
+
+# *.xlsx
+
+output/
