@@ -6,7 +6,6 @@ import re
 from typing import Optional
 from datetime import datetime
 
-
 # 获取当前脚本所在目录
 base_dir = os.path.dirname(os.path.abspath(__file__))
 log_dir = os.path.join(base_dir, "logs")
@@ -38,12 +37,12 @@ class CustomsPolicyClient:
 
 
         self.upload_headers = {
-            "Authorization": f"Bearer {self.token}",
+            "Authorization": f"{self.token}",
             "tenant-id": self.tenant_id
         }
 
         self.headers = {
-            "Authorization": f"Bearer {self.token}",
+            "Authorization": f"{self.token}",
             "Content-Type": "application/json"
         }
 
@@ -85,11 +84,10 @@ class CustomsPolicyClient:
 
             res_json = res.json()
             # logging.info(f"接口返回完整内容: {res_json}")
-            data = res_json.get("data")
-            if not data:
-                logging.error(f"获名失败取预签：{res_json.get('msg', '未知错误')}")
-                logging.error(f"获取预签名失败：{res.text}")
+            if res_json.get("code") != 0:
+                logging.error(f"获取预签名失败：{res_json}")
                 return None
+            data = res_json.get("data") or {}
 
             upload_url = data.get("uploadUrl")
             file_url = data.get("url")

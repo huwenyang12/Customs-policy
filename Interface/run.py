@@ -2,13 +2,20 @@ import json
 import logging
 import os
 from customs_policy_client import CustomsPolicyClient
+from get_token_cookie import  main as  query_voucher
+
 
 # 初始化日志
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
-# 初始化客户端
-obj = CustomsPolicyClient(token="7adc5c851d4e45b897abd643b334d8da")
+# 获取token
+url, get_token, get_cookie = query_voucher()
+# logging.info(f"Request URL: {url}")
+# logging.info(f"Authorization: {get_token}")
+# logging.info(f"Cookie: {get_cookie}" )
 
+# 初始化客户端
+obj = CustomsPolicyClient(token=get_token)
 file_names = [
     "海关法规.json",
     "政策解读.json",
