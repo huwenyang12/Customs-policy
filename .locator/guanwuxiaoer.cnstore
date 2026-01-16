@@ -1,1343 +1,1420 @@
-{
-	"id": "f217d86f-9a6d-4338-b0df-290d936aab2e",
-	"name": "guanwuxiaoer",
-	"nodes": [],
-	"locators": [
-		{
-			"id": "ae6322f7-e7c6-4a6f-9af6-e91950aaa1b7",
-			"name": "input_开始月份",
-			"filePath": "efbac33f-b2c8-4af0-a848-faf38b29bbda.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "INPUT"
-									},
-									"class": {
-										"value": "el-range-input",
-										"excluded": true
-									},
-									"ancestorId": {
-										"value": "dataTableBox"
-									},
-									"ancestorClass": {
-										"value": "el-date-editor el-range-editor el-input__inner el-date-editor--monthrange",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "1",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>form>div>div>div>input",
-										"excluded": true
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": false
-									},
-									"autocomplete": {
-										"isCustom": true,
-										"value": "off",
-										"operator": "equals",
-										"excluded": true
-									},
-									"placeholder": {
-										"isCustom": true,
-										"value": "开始月份",
-										"operator": "equals",
-										"excluded": true
-									}
-								},
-								"childControls": [],
-								"excluded": false
-							}
-						],
-						"excluded": false
-					}
-				],
-				"parameters": {
-					"excluded": true,
-					"operator": "equals",
-					"value": ""
-				}
-			}
-		},
-		{
-			"id": "bea34e99-5414-42f5-9308-0d07d83279ee",
-			"name": "input_结束月份",
-			"filePath": "74580ab7-2f36-433a-ba1c-48c4368db3cd.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "INPUT"
-									},
-									"class": {
-										"value": "el-range-input",
-										"excluded": true
-									},
-									"ancestorId": {
-										"value": "dataTableBox"
-									},
-									"ancestorClass": {
-										"value": "el-date-editor el-range-editor el-input__inner el-date-editor--monthrange",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "1",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>form>div>div>div>input",
-										"excluded": true
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "2"
-									},
-									"autocomplete": {
-										"isCustom": true,
-										"value": "off",
-										"operator": "equals",
-										"excluded": true
-									},
-									"placeholder": {
-										"isCustom": true,
-										"value": "结束月份",
-										"operator": "equals",
-										"excluded": true
-									}
-								}
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"id": "3a333485-c3f9-4ab4-a95e-ee30eb400293",
-			"name": "button_查询",
-			"filePath": "5693ec1a-bcd2-4a1d-8a9e-70579a03179f.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "BUTTON"
-									},
-									"class": {
-										"value": "el-button el-button--primary",
-										"excluded": true
-									},
-									"type": {
-										"value": "button"
-									},
-									"ancestorId": {
-										"value": "dataTableBox"
-									},
-									"ancestorClass": {
-										"value": "el-form-item__content",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "0",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>form>div>div>button",
-										"excluded": true
-									},
-									"sInfo": {
-										"value": "查询"
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": true
-									}
-								}
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"id": "eea8d2c4-984b-4268-ab56-dca297a91d00",
-			"name": "span_共_120_条",
-			"filePath": "39a0b1a1-985f-4d75-9358-f797fb6ae6ee.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "SPAN"
-									},
-									"class": {
-										"value": "el-pagination__total",
-										"excluded": true
-									},
-									"ancestorId": {
-										"value": "dataTableBox"
-									},
-									"ancestorClass": {
-										"value": "el-pagination",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "1",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>span",
-										"excluded": true
-									},
-									"sInfo": {
-										"value": "共 * 条"
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": true
-									}
-								},
-								"childControls": [],
-								"excluded": false
-							}
-						],
-						"excluded": false
-					}
-				],
-				"parameters": {
-					"excluded": true,
-					"operator": "equals",
-					"value": ""
-				}
-			}
-		},
-		{
-			"id": "32a39df0-8e4e-47c6-9549-6392a48af73b",
-			"name": "number_el_input_inner",
-			"filePath": "c4d2e4d0-799b-4edd-9e93-ca9ec4c5e5d4.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "INPUT"
-									},
-									"class": {
-										"value": "el-input__inner",
-										"excluded": true
-									},
-									"type": {
-										"value": "number"
-									},
-									"ancestorId": {
-										"value": "dataTableBox",
-										"excluded": true
-									},
-									"ancestorClass": {
-										"value": "el-input el-pagination__editor is-in-pagination",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "1",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>span>div>input",
-										"excluded": true
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": true
-									},
-									"autocomplete": {
-										"isCustom": true,
-										"value": "off",
-										"operator": "equals",
-										"excluded": true
-									},
-									"min": {
-										"isCustom": true,
-										"value": "1",
-										"operator": "equals",
-										"excluded": true
-									},
-									"max": {
-										"isCustom": true,
-										"value": "12",
-										"operator": "equals",
-										"excluded": true
-									}
-								}
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"id": "fe8f8d6d-3059-4947-bcb0-684fed497ff8",
-			"name": "币种中文",
-			"filePath": "032229fe-d038-4a49-b41d-4809566d4bb3.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "TABLE"
-									},
-									"class": {
-										"value": "el-table__body"
-									},
-									"ancestorId": {
-										"value": "dataTableBox",
-										"excluded": true
-									},
-									"ancestorClass": {
-										"value": "el-table__body-wrapper is-scrolling-none",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "0",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>div>table",
-										"excluded": true
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": true
-									},
-									"rowCount": {
-										"isCustom": true,
-										"value": "10",
-										"operator": "equals",
-										"excluded": true
-									},
-									"columnCount": {
-										"isCustom": true,
-										"value": "8",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellspacing": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellpadding": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"border": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"style": {
-										"isCustom": true,
-										"value": "width: 1220px;",
-										"operator": "equals",
-										"excluded": true
-									}
-								},
-								"childControls": [
-									{
-										"identifier": {
-											"tag": {
-												"value": "TD"
-											},
-											"class": {
-												"value": "el-table_1_column_2  ",
-												"excluded": true
-											},
-											"ancestorId": {
-												"value": "dataTableBox",
-												"excluded": true
-											},
-											"ancestorClass": {
-												"value": "el-table__row",
-												"excluded": true
-											},
-											"isLeaf": {
-												"value": "0",
-												"excluded": true
-											},
-											"cssSelector": {
-												"value": "body>div>div>div>div>div>table>tbody>tr>td",
-												"excluded": true
-											},
-											"tableRow": {
-												"value": "1",
-												"excluded": true
-											},
-											"tableCol": {
-												"value": "2"
-											},
-											"controlMetaType": "Web",
-											"index": {
-												"value": "{{index}}",
-												"excluded": false
-											},
-											"rowspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											},
-											"colspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											}
-										},
-										"childControls": [],
-										"excluded": false
-									}
-								],
-								"excluded": false
-							}
-						],
-						"excluded": false
-					}
-				],
-				"parameters": {
-					"excluded": true,
-					"operator": "equals",
-					"value": ""
-				}
-			}
-		},
-		{
-			"id": "8891c8a3-53db-4f5d-9c6e-442f2a3368ca",
-			"name": "币种英文",
-			"filePath": "64ec7ae0-575f-4aec-b74f-8722dd9bc2b9.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "TABLE"
-									},
-									"class": {
-										"value": "el-table__body"
-									},
-									"ancestorId": {
-										"value": "dataTableBox",
-										"excluded": true
-									},
-									"ancestorClass": {
-										"value": "el-table__body-wrapper is-scrolling-none",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "0",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>div>table",
-										"excluded": true
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": true
-									},
-									"rowCount": {
-										"isCustom": true,
-										"value": "10",
-										"operator": "equals",
-										"excluded": true
-									},
-									"columnCount": {
-										"isCustom": true,
-										"value": "8",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellspacing": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellpadding": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"border": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"style": {
-										"isCustom": true,
-										"value": "width: 1220px;",
-										"operator": "equals",
-										"excluded": true
-									}
-								},
-								"childControls": [
-									{
-										"identifier": {
-											"tag": {
-												"value": "TD"
-											},
-											"class": {
-												"value": "el-table_1_column_3  ",
-												"excluded": true
-											},
-											"ancestorId": {
-												"value": "dataTableBox",
-												"excluded": true
-											},
-											"ancestorClass": {
-												"value": "el-table__row",
-												"excluded": true
-											},
-											"isLeaf": {
-												"value": "0",
-												"excluded": true
-											},
-											"cssSelector": {
-												"value": "body>div>div>div>div>div>table>tbody>tr>td",
-												"excluded": true
-											},
-											"tableRow": {
-												"value": "1",
-												"excluded": true
-											},
-											"tableCol": {
-												"value": "3"
-											},
-											"controlMetaType": "Web",
-											"index": {
-												"value": "{{index}}"
-											},
-											"rowspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											},
-											"colspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											}
-										},
-										"childControls": [],
-										"excluded": false
-									}
-								],
-								"excluded": false
-							}
-						],
-						"excluded": false
-					}
-				],
-				"parameters": {
-					"excluded": true,
-					"operator": "equals",
-					"value": ""
-				}
-			}
-		},
-		{
-			"id": "74d17985-9e79-4af5-b599-c6adf151ced0",
-			"name": "币种代码",
-			"filePath": "74cd6e11-7e23-43a2-b4a7-8e84366b3725.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "TABLE"
-									},
-									"class": {
-										"value": "el-table__body"
-									},
-									"ancestorId": {
-										"value": "dataTableBox",
-										"excluded": true
-									},
-									"ancestorClass": {
-										"value": "el-table__body-wrapper is-scrolling-none",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "0",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>div>table",
-										"excluded": true
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": true
-									},
-									"rowCount": {
-										"isCustom": true,
-										"value": "10",
-										"operator": "equals",
-										"excluded": true
-									},
-									"columnCount": {
-										"isCustom": true,
-										"value": "8",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellspacing": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellpadding": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"border": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"style": {
-										"isCustom": true,
-										"value": "width: 1220px;",
-										"operator": "equals",
-										"excluded": true
-									}
-								},
-								"childControls": [
-									{
-										"identifier": {
-											"tag": {
-												"value": "TD"
-											},
-											"class": {
-												"value": "el-table_1_column_4  ",
-												"excluded": true
-											},
-											"ancestorId": {
-												"value": "dataTableBox",
-												"excluded": true
-											},
-											"ancestorClass": {
-												"value": "el-table__row",
-												"excluded": true
-											},
-											"isLeaf": {
-												"value": "0",
-												"excluded": true
-											},
-											"cssSelector": {
-												"value": "body>div>div>div>div>div>table>tbody>tr>td",
-												"excluded": true
-											},
-											"tableRow": {
-												"value": "1",
-												"excluded": true
-											},
-											"tableCol": {
-												"value": "4"
-											},
-											"controlMetaType": "Web",
-											"index": {
-												"value": "{{index}}"
-											},
-											"rowspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											},
-											"colspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											}
-										},
-										"childControls": [],
-										"excluded": false
-									}
-								],
-								"excluded": false
-							}
-						],
-						"excluded": false
-					}
-				],
-				"parameters": {
-					"excluded": true,
-					"operator": "equals",
-					"value": ""
-				}
-			}
-		},
-		{
-			"id": "4a80c045-8b76-48d5-ac8e-e6e918df7a01",
-			"name": "海关汇率",
-			"filePath": "31cde994-8c3e-4f4f-a14d-1768f7cafe25.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "TABLE"
-									},
-									"class": {
-										"value": "el-table__body"
-									},
-									"ancestorId": {
-										"value": "dataTableBox",
-										"excluded": true
-									},
-									"ancestorClass": {
-										"value": "el-table__body-wrapper is-scrolling-none",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "0",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>div>table",
-										"excluded": true
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": true
-									},
-									"rowCount": {
-										"isCustom": true,
-										"value": "10",
-										"operator": "equals",
-										"excluded": true
-									},
-									"columnCount": {
-										"isCustom": true,
-										"value": "8",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellspacing": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellpadding": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"border": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"style": {
-										"isCustom": true,
-										"value": "width: 1220px;",
-										"operator": "equals",
-										"excluded": true
-									}
-								},
-								"childControls": [
-									{
-										"identifier": {
-											"tag": {
-												"value": "TD"
-											},
-											"class": {
-												"value": "el-table_1_column_5  ",
-												"excluded": true
-											},
-											"ancestorId": {
-												"value": "dataTableBox",
-												"excluded": true
-											},
-											"ancestorClass": {
-												"value": "el-table__row",
-												"excluded": true
-											},
-											"isLeaf": {
-												"value": "0",
-												"excluded": true
-											},
-											"cssSelector": {
-												"value": "body>div>div>div>div>div>table>tbody>tr>td",
-												"excluded": true
-											},
-											"tableRow": {
-												"value": "1",
-												"excluded": true
-											},
-											"tableCol": {
-												"value": "5"
-											},
-											"controlMetaType": "Web",
-											"index": {
-												"value": "{{index}}"
-											},
-											"rowspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											},
-											"colspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											}
-										},
-										"childControls": [],
-										"excluded": false
-									}
-								],
-								"excluded": false
-							}
-						],
-						"excluded": false
-					}
-				],
-				"parameters": {
-					"excluded": true,
-					"operator": "equals",
-					"value": ""
-				}
-			}
-		},
-		{
-			"id": "2c0c615f-d0a8-431b-b1d3-5ca6047b2002",
-			"name": "适用月份",
-			"filePath": "4a3f73ec-b559-40af-99c5-31d66ecdadb4.jpg",
-			"content": {
-				"automationType": "Chrome",
-				"processName": {
-					"value": "chrome"
-				},
-				"filePath": {
-					"value": "chrome.exe"
-				},
-				"version": {
-					"value": "1.3"
-				},
-				"childControls": [
-					{
-						"identifier": {
-							"role": {
-								"value": "window"
-							},
-							"title": {
-								"value": "海关适用汇率在线查询-关务小二"
-							},
-							"url": {
-								"value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
-								"excluded": true
-							},
-							"className": {
-								"value": "Chrome_WidgetWin_1"
-							},
-							"controlMetaType": "Tab"
-						},
-						"childControls": [
-							{
-								"identifier": {
-									"tag": {
-										"value": "TABLE"
-									},
-									"class": {
-										"value": "el-table__body"
-									},
-									"ancestorId": {
-										"value": "dataTableBox",
-										"excluded": true
-									},
-									"ancestorClass": {
-										"value": "el-table__body-wrapper is-scrolling-none",
-										"excluded": true
-									},
-									"isLeaf": {
-										"value": "0",
-										"excluded": true
-									},
-									"cssSelector": {
-										"value": "body>div>div>div>div>div>table",
-										"excluded": true
-									},
-									"tableRow": {
-										"value": "-1",
-										"excluded": true
-									},
-									"tableCol": {
-										"value": "-1",
-										"excluded": true
-									},
-									"controlMetaType": "Web",
-									"index": {
-										"value": "1",
-										"excluded": true
-									},
-									"rowCount": {
-										"isCustom": true,
-										"value": "10",
-										"operator": "equals",
-										"excluded": true
-									},
-									"columnCount": {
-										"isCustom": true,
-										"value": "8",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellspacing": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"cellpadding": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"border": {
-										"isCustom": true,
-										"value": "0",
-										"operator": "equals",
-										"excluded": true
-									},
-									"style": {
-										"isCustom": true,
-										"value": "width: 1220px;",
-										"operator": "equals",
-										"excluded": true
-									}
-								},
-								"childControls": [
-									{
-										"identifier": {
-											"tag": {
-												"value": "TD"
-											},
-											"class": {
-												"value": "el-table_1_column_5  ",
-												"excluded": true
-											},
-											"ancestorId": {
-												"value": "dataTableBox",
-												"excluded": true
-											},
-											"ancestorClass": {
-												"value": "el-table__row",
-												"excluded": true
-											},
-											"isLeaf": {
-												"value": "0",
-												"excluded": true
-											},
-											"cssSelector": {
-												"value": "body>div>div>div>div>div>table>tbody>tr>td",
-												"excluded": true
-											},
-											"tableRow": {
-												"value": "1",
-												"excluded": true
-											},
-											"tableCol": {
-												"value": "6"
-											},
-											"controlMetaType": "Web",
-											"index": {
-												"value": "{{index}}"
-											},
-											"rowspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											},
-											"colspan": {
-												"isCustom": true,
-												"value": "1",
-												"operator": "equals",
-												"excluded": true
-											}
-										},
-										"childControls": [],
-										"excluded": false
-									}
-								],
-								"excluded": false
-							}
-						],
-						"excluded": false
-					}
-				],
-				"parameters": {
-					"excluded": true,
-					"operator": "equals",
-					"value": ""
-				}
-			}
-		}
-	]
+﻿{
+  "id": "f217d86f-9a6d-4338-b0df-290d936aab2e",
+  "name": "guanwuxiaoer",
+  "nodes": [],
+  "locators": [
+    {
+      "id": "ae6322f7-e7c6-4a6f-9af6-e91950aaa1b7",
+      "name": "input_开始月份",
+      "filePath": "efbac33f-b2c8-4af0-a848-faf38b29bbda.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "INPUT"
+                  },
+                  "class": {
+                    "value": "el-range-input",
+                    "excluded": true
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox"
+                  },
+                  "ancestorClass": {
+                    "value": "el-date-editor el-range-editor el-input__inner el-date-editor--monthrange",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>form>div>div>div>input",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": false
+                  },
+                  "autocomplete": {
+                    "isCustom": true,
+                    "value": "off",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "placeholder": {
+                    "isCustom": true,
+                    "value": "开始月份",
+                    "operator": "equals",
+                    "excluded": true
+                  }
+                },
+                "childControls": [],
+                "excluded": false
+              }
+            ],
+            "excluded": false
+          }
+        ],
+        "parameters": {
+          "excluded": true,
+          "operator": "equals",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "bea34e99-5414-42f5-9308-0d07d83279ee",
+      "name": "input_结束月份",
+      "filePath": "74580ab7-2f36-433a-ba1c-48c4368db3cd.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "INPUT"
+                  },
+                  "class": {
+                    "value": "el-range-input",
+                    "excluded": true
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox"
+                  },
+                  "ancestorClass": {
+                    "value": "el-date-editor el-range-editor el-input__inner el-date-editor--monthrange",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>form>div>div>div>input",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "2"
+                  },
+                  "autocomplete": {
+                    "isCustom": true,
+                    "value": "off",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "placeholder": {
+                    "isCustom": true,
+                    "value": "结束月份",
+                    "operator": "equals",
+                    "excluded": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "3a333485-c3f9-4ab4-a95e-ee30eb400293",
+      "name": "button_查询",
+      "filePath": "5693ec1a-bcd2-4a1d-8a9e-70579a03179f.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "BUTTON"
+                  },
+                  "class": {
+                    "value": "el-button el-button--primary",
+                    "excluded": true
+                  },
+                  "type": {
+                    "value": "button"
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox"
+                  },
+                  "ancestorClass": {
+                    "value": "el-form-item__content",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "0",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>form>div>div>button",
+                    "excluded": true
+                  },
+                  "sInfo": {
+                    "value": "查询"
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eea8d2c4-984b-4268-ab56-dca297a91d00",
+      "name": "span_共_120_条",
+      "filePath": "39a0b1a1-985f-4d75-9358-f797fb6ae6ee.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "SPAN"
+                  },
+                  "class": {
+                    "value": "el-pagination__total",
+                    "excluded": true
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox"
+                  },
+                  "ancestorClass": {
+                    "value": "el-pagination",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>span",
+                    "excluded": true
+                  },
+                  "sInfo": {
+                    "value": "共 * 条"
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  }
+                },
+                "childControls": [],
+                "excluded": false
+              }
+            ],
+            "excluded": false
+          }
+        ],
+        "parameters": {
+          "excluded": true,
+          "operator": "equals",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "32a39df0-8e4e-47c6-9549-6392a48af73b",
+      "name": "number_el_input_inner",
+      "filePath": "c4d2e4d0-799b-4edd-9e93-ca9ec4c5e5d4.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "INPUT"
+                  },
+                  "class": {
+                    "value": "el-input__inner",
+                    "excluded": true
+                  },
+                  "type": {
+                    "value": "number"
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox",
+                    "excluded": true
+                  },
+                  "ancestorClass": {
+                    "value": "el-input el-pagination__editor is-in-pagination",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>span>div>input",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "autocomplete": {
+                    "isCustom": true,
+                    "value": "off",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "min": {
+                    "isCustom": true,
+                    "value": "1",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "max": {
+                    "isCustom": true,
+                    "value": "12",
+                    "operator": "equals",
+                    "excluded": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "fe8f8d6d-3059-4947-bcb0-684fed497ff8",
+      "name": "币种中文",
+      "filePath": "032229fe-d038-4a49-b41d-4809566d4bb3.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "TABLE"
+                  },
+                  "class": {
+                    "value": "el-table__body"
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox",
+                    "excluded": true
+                  },
+                  "ancestorClass": {
+                    "value": "el-table__body-wrapper is-scrolling-none",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "0",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>div>table",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "rowCount": {
+                    "isCustom": true,
+                    "value": "10",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "columnCount": {
+                    "isCustom": true,
+                    "value": "8",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellspacing": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellpadding": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "border": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "style": {
+                    "isCustom": true,
+                    "value": "width: 1220px;",
+                    "operator": "equals",
+                    "excluded": true
+                  }
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "TD"
+                      },
+                      "class": {
+                        "value": "el-table_1_column_2  ",
+                        "excluded": true
+                      },
+                      "ancestorId": {
+                        "value": "dataTableBox",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "el-table__row",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "0",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>div>div>table>tbody>tr>td",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "2"
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "{{index}}",
+                        "excluded": false
+                      },
+                      "rowspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      },
+                      "colspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      }
+                    },
+                    "childControls": [],
+                    "excluded": false
+                  }
+                ],
+                "excluded": false
+              }
+            ],
+            "excluded": false
+          }
+        ],
+        "parameters": {
+          "excluded": true,
+          "operator": "equals",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "8891c8a3-53db-4f5d-9c6e-442f2a3368ca",
+      "name": "币种英文",
+      "filePath": "64ec7ae0-575f-4aec-b74f-8722dd9bc2b9.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "TABLE"
+                  },
+                  "class": {
+                    "value": "el-table__body"
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox",
+                    "excluded": true
+                  },
+                  "ancestorClass": {
+                    "value": "el-table__body-wrapper is-scrolling-none",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "0",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>div>table",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "rowCount": {
+                    "isCustom": true,
+                    "value": "10",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "columnCount": {
+                    "isCustom": true,
+                    "value": "8",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellspacing": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellpadding": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "border": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "style": {
+                    "isCustom": true,
+                    "value": "width: 1220px;",
+                    "operator": "equals",
+                    "excluded": true
+                  }
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "TD"
+                      },
+                      "class": {
+                        "value": "el-table_1_column_3  ",
+                        "excluded": true
+                      },
+                      "ancestorId": {
+                        "value": "dataTableBox",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "el-table__row",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "0",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>div>div>table>tbody>tr>td",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "3"
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "{{index}}"
+                      },
+                      "rowspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      },
+                      "colspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      }
+                    },
+                    "childControls": [],
+                    "excluded": false
+                  }
+                ],
+                "excluded": false
+              }
+            ],
+            "excluded": false
+          }
+        ],
+        "parameters": {
+          "excluded": true,
+          "operator": "equals",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "74d17985-9e79-4af5-b599-c6adf151ced0",
+      "name": "币种代码",
+      "filePath": "74cd6e11-7e23-43a2-b4a7-8e84366b3725.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "TABLE"
+                  },
+                  "class": {
+                    "value": "el-table__body"
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox",
+                    "excluded": true
+                  },
+                  "ancestorClass": {
+                    "value": "el-table__body-wrapper is-scrolling-none",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "0",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>div>table",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "rowCount": {
+                    "isCustom": true,
+                    "value": "10",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "columnCount": {
+                    "isCustom": true,
+                    "value": "8",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellspacing": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellpadding": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "border": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "style": {
+                    "isCustom": true,
+                    "value": "width: 1220px;",
+                    "operator": "equals",
+                    "excluded": true
+                  }
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "TD"
+                      },
+                      "class": {
+                        "value": "el-table_1_column_4  ",
+                        "excluded": true
+                      },
+                      "ancestorId": {
+                        "value": "dataTableBox",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "el-table__row",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "0",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>div>div>table>tbody>tr>td",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "4"
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "{{index}}"
+                      },
+                      "rowspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      },
+                      "colspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      }
+                    },
+                    "childControls": [],
+                    "excluded": false
+                  }
+                ],
+                "excluded": false
+              }
+            ],
+            "excluded": false
+          }
+        ],
+        "parameters": {
+          "excluded": true,
+          "operator": "equals",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "4a80c045-8b76-48d5-ac8e-e6e918df7a01",
+      "name": "海关汇率",
+      "filePath": "31cde994-8c3e-4f4f-a14d-1768f7cafe25.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "TABLE"
+                  },
+                  "class": {
+                    "value": "el-table__body"
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox",
+                    "excluded": true
+                  },
+                  "ancestorClass": {
+                    "value": "el-table__body-wrapper is-scrolling-none",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "0",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>div>table",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "rowCount": {
+                    "isCustom": true,
+                    "value": "10",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "columnCount": {
+                    "isCustom": true,
+                    "value": "8",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellspacing": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellpadding": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "border": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "style": {
+                    "isCustom": true,
+                    "value": "width: 1220px;",
+                    "operator": "equals",
+                    "excluded": true
+                  }
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "TD"
+                      },
+                      "class": {
+                        "value": "el-table_1_column_5  ",
+                        "excluded": true
+                      },
+                      "ancestorId": {
+                        "value": "dataTableBox",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "el-table__row",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "0",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>div>div>table>tbody>tr>td",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "5"
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "{{index}}"
+                      },
+                      "rowspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      },
+                      "colspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      }
+                    },
+                    "childControls": [],
+                    "excluded": false
+                  }
+                ],
+                "excluded": false
+              }
+            ],
+            "excluded": false
+          }
+        ],
+        "parameters": {
+          "excluded": true,
+          "operator": "equals",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "2c0c615f-d0a8-431b-b1d3-5ca6047b2002",
+      "name": "适用月份",
+      "filePath": "4a3f73ec-b559-40af-99c5-31d66ecdadb4.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "TABLE"
+                  },
+                  "class": {
+                    "value": "el-table__body"
+                  },
+                  "ancestorId": {
+                    "value": "dataTableBox",
+                    "excluded": true
+                  },
+                  "ancestorClass": {
+                    "value": "el-table__body-wrapper is-scrolling-none",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "0",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>div>table",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "rowCount": {
+                    "isCustom": true,
+                    "value": "10",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "columnCount": {
+                    "isCustom": true,
+                    "value": "8",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellspacing": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "cellpadding": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "border": {
+                    "isCustom": true,
+                    "value": "0",
+                    "operator": "equals",
+                    "excluded": true
+                  },
+                  "style": {
+                    "isCustom": true,
+                    "value": "width: 1220px;",
+                    "operator": "equals",
+                    "excluded": true
+                  }
+                },
+                "childControls": [
+                  {
+                    "identifier": {
+                      "tag": {
+                        "value": "TD"
+                      },
+                      "class": {
+                        "value": "el-table_1_column_5  ",
+                        "excluded": true
+                      },
+                      "ancestorId": {
+                        "value": "dataTableBox",
+                        "excluded": true
+                      },
+                      "ancestorClass": {
+                        "value": "el-table__row",
+                        "excluded": true
+                      },
+                      "isLeaf": {
+                        "value": "0",
+                        "excluded": true
+                      },
+                      "cssSelector": {
+                        "value": "body>div>div>div>div>div>table>tbody>tr>td",
+                        "excluded": true
+                      },
+                      "tableRow": {
+                        "value": "1",
+                        "excluded": true
+                      },
+                      "tableCol": {
+                        "value": "6"
+                      },
+                      "controlMetaType": "Web",
+                      "index": {
+                        "value": "{{index}}"
+                      },
+                      "rowspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      },
+                      "colspan": {
+                        "isCustom": true,
+                        "value": "1",
+                        "operator": "equals",
+                        "excluded": true
+                      }
+                    },
+                    "childControls": [],
+                    "excluded": false
+                  }
+                ],
+                "excluded": false
+              }
+            ],
+            "excluded": false
+          }
+        ],
+        "parameters": {
+          "excluded": true,
+          "operator": "equals",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "3983b05c-cfc8-4b62-804e-74beeb6f4456",
+      "name": "img_close",
+      "filePath": "a7138054-4d74-401c-8243-804d7db87ca4.jpg",
+      "content": {
+        "automationType": "Chrome",
+        "processName": {
+          "value": "chrome"
+        },
+        "filePath": {
+          "value": "chrome.exe"
+        },
+        "version": {
+          "value": "1.3"
+        },
+        "childControls": [
+          {
+            "identifier": {
+              "role": {
+                "value": "window"
+              },
+              "title": {
+                "value": "海关适用汇率在线查询-关务小二"
+              },
+              "url": {
+                "value": "https://www.guanwuxiaoer.com/haiguanhuilv.php",
+                "excluded": true
+              },
+              "className": {
+                "value": "Chrome_WidgetWin_1"
+              },
+              "controlMetaType": "Tab"
+            },
+            "childControls": [
+              {
+                "identifier": {
+                  "tag": {
+                    "value": "I"
+                  },
+                  "class": {
+                    "value": "el-dialog__close el-icon el-icon-close",
+                    "excluded": true
+                  },
+                  "ancestorId": {
+                    "value": "customsRate"
+                  },
+                  "ancestorClass": {
+                    "value": "el-dialog__headerbtn",
+                    "excluded": true
+                  },
+                  "isLeaf": {
+                    "value": "1",
+                    "excluded": true
+                  },
+                  "cssSelector": {
+                    "value": "body>div>div>div>div>button>i",
+                    "excluded": true
+                  },
+                  "tableRow": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "tableCol": {
+                    "value": "-1",
+                    "excluded": true
+                  },
+                  "controlMetaType": "Web",
+                  "index": {
+                    "value": "3"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }
