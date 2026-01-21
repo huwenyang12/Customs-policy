@@ -6,6 +6,8 @@ from spider.sww_spider import run_sww_spider # 商务委
 from spider.gxb_spider import run_gxb_spider # 工信部
 from spider.yjj_spider import run_yjj_spider # 药监局
 
+from Interface.run import run_interface
+
 
 
 
@@ -20,5 +22,9 @@ async def main():
     
 
 if __name__ == "__main__":
+    # 运行所有爬虫任务
     asyncio.run(main())
+    
+    # 运行接口处理
+    run_interface()
 
