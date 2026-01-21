@@ -1,8 +1,8 @@
 import json
 import logging
 import os
-from customs_policy_client import CustomsPolicyClient
-from get_token_cookie import  main as  query_voucher
+from .customs_policy_client import CustomsPolicyClient
+from .get_token_cookie import  main as  query_voucher
 
 
 # 初始化日志
