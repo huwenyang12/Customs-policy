@@ -26,8 +26,7 @@ file_names = [
 ]
 
 # 抓取数据路径
-json_dir = r"D:\CMS-Client\CustomRate-Sync\Customs-policy-main\output\data"
-# json_dir = r"C:\Users\FangYan\Desktop\Customs-policy-main\output\data"
+json_dir = r"output\data"
 
 
 # 所有文件的处理结果（按文件名记录成功/失败）
