@@ -15,3 +15,6 @@ Interface/logs/
 __pycache__/
 
 Interface/__pycache__/
+
+*.pyc
+
