@@ -2,11 +2,11 @@ import json
 import logging
 import os
 from .customs_policy_client import CustomsPolicyClient
-from .get_token_cookie import  main as  query_voucher
+from .get_token_cookie import main as query_voucher
 
 
 # 初始化日志
-logging.basicConfig(level=logging.INFO, format='%(message)s')
+logging.basicConfig(level=logging.INFO, format="%(message)s")
 
 # 获取token
 url, get_token, get_cookie = query_voucher()
@@ -22,23 +22,28 @@ file_names = [
     "财政部.json",
     "商务委.json",
     "药监局.json",
-    "工信部.json"
+    "工信部.json",
 ]
 
-json_dir = r"D:\海关接口\海关数据推送\output\data"
+# 抓取数据路径
+json_dir = r"D:\CMS-Client\CustomRate-Sync\Customs-policy-main\output\data"
+# json_dir = r"C:\Users\FangYan\Desktop\Customs-policy-main\output\data"
+
 
 # 所有文件的处理结果（按文件名记录成功/失败）
 all_results = {}
 
+
 def read_file(path):
     try:
-        with open(path, 'r', encoding='utf-8') as f:
+        with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
         print(f"成功读取 {os.path.basename(path)}，共 {len(data)} 条政策数据")
         return data
     except Exception as e:
         print(f"错误：读取 {path} 时发生未知错误 - {str(e)}")
         return []
+
 
 def process_customs_policies(file_label, data_list):
     result = {
@@ -48,7 +53,7 @@ def process_customs_policies(file_label, data_list):
     }
 
     for i, policy in enumerate(data_list):
-        print(f"\n=== 处理第 {i+1}/{len(data_list)} 条政策 ===")
+        print(f"\n=== 处理第 {i + 1}/{len(data_list)} 条政策 ===")
         print(f"政策标题: {policy['政策标题']}")
         policy_id = policy["唯一ID"]
 
@@ -79,7 +84,7 @@ def process_customs_policies(file_label, data_list):
                 "efficacy": policy["是否有效"],
                 "attachment": str(policy["zip包文件数量"]),
                 "attachmentUrl": attachment_url,
-                "policyId": policy_id
+                "policyId": policy_id,
             }
 
             print("文件上传成功，开始创建政策...")
@@ -98,9 +103,10 @@ def process_customs_policies(file_label, data_list):
     # 存储结果
     all_results[file_label] = result
 
+
 def run_interface():
     print("======= 开始批量处理海关政策数据 =======\n")
-    
+
     for file_name in file_names:
         print(f"\n\n======= 开始处理文件：{file_name} =======")
         path = os.path.join(json_dir, file_name)
@@ -118,12 +124,14 @@ def run_interface():
         total_success += len(result["success"])
         total_failed += len(result["failed"])
         total_skipped += len(result["skipped"])
-        total_policies += (len(result["success"]) + len(result["failed"]) + len(result["skipped"]))  # 统计条数
+        total_policies += (
+            len(result["success"]) + len(result["failed"]) + len(result["skipped"])
+        )  # 统计条数
         success_ids.extend(result["success"])
         failed_ids.extend(result["failed"])
 
     logging.info(f"总共处理政策文件数：{len(file_names)}")
-    logging.info(f"总共处理政策条数：{total_policies}") 
+    logging.info(f"总共处理政策条数：{total_policies}")
     logging.info(f"总计成功：{total_success} 条")
     logging.info(f"总计失败：{total_failed} 条")
     logging.info(f"总计跳过：{total_skipped} 条\n")
@@ -132,12 +140,15 @@ def run_interface():
 
     print("\n========== 📂 每个文件处理情况 ==========")
     for label, result in all_results.items():
-        file_total = len(result["success"]) + len(result["failed"]) + len(result["skipped"])  
+        file_total = (
+            len(result["success"]) + len(result["failed"]) + len(result["skipped"])
+        )
         logging.info(f"\n📁 文件：{label}")
-        logging.info(f"  总处理条数：{file_total}")  
+        logging.info(f"  总处理条数：{file_total}")
         logging.info(f"  成功：{len(result['success'])} 条 → {result['success']}")
         logging.info(f"  失败：{len(result['failed'])} 条 → {result['failed']}")
         logging.info(f"  跳过：{len(result['skipped'])} 条")
+
 
 if __name__ == "__main__":
     run_interface()
